@@ -31,8 +31,6 @@
     <Compile Include="core\FilteredCollection.py" />
     <Compile Include="core\Helpers.py" />
     <Compile Include="core\Item.py" />
-    <Compile Include="core\Pattern.py" />
-    <Compile Include="core\PatternCreator.py" />
     <Compile Include="core\PatternMiner.py" />
     <Compile Include="core\PBC4cip.py" />
     <Compile Include="core\RandomSampler.py" />

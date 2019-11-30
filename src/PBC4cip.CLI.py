@@ -28,9 +28,9 @@ def GetFilesFromDirectory(directory):
         raise Exception(f"Directory '{directory}' is not valid.")
 
 
-def Train(file, outputDirectory, treeCount, suffix=None):
+def Train(file, outputDirectory, treeCount, multivariate, suffix=None):
     classifier = PBC4cip(file)
-    patterns = classifier.Training(treeCount)
+    patterns = classifier.Training(multivariate, treeCount)
     WritePatternsBinary(patterns, file, outputDirectory, suffix)
     WritePatternsCSV(patterns, file, outputDirectory, suffix)
 
@@ -80,7 +80,7 @@ def Execute(args):
     for f in tra:
         tra.set_description(f"Extracting patterns from {training_files[f]}")
         tra.refresh()  # to show immediately the update
-        Train(training_files[f], args.output_directory, args.tree_count,
+        Train(training_files[f], args.output_directory, args.tree_count, args.multivariate,
               args.training_file_suffix)
 
     print("===============================================================================")
@@ -106,8 +106,8 @@ if __name__ == '__main__':
     defaultTrainingFiles = list()
     defaultTestingFiles = list()
 
-    #Some samples to test the program (they are already in the data folder)
-    #region Default files
+    # Some samples to test the program (they are already in the data folder)
+    # region Default files
     defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
         defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tra.dat"))
     defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
@@ -120,8 +120,8 @@ if __name__ == '__main__':
         defaultDataDir), "iris0"), "iris0-5-1tra.dat"))
     defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
         defaultDataDir), "iris0"), "iris0-5-1tst.dat"))
-    #endregion
-    
+    # endregion
+
     parser = argparse.ArgumentParser(
         description="Process some class imbalace datasets using PBC4cip.")
 
@@ -161,13 +161,13 @@ if __name__ == '__main__':
     parser.add_argument("--multivariate",
                         type=bool,
                         metavar="<True/False>",
-                        default=False,
+                        default=True,
                         help="states if multivariate variant is to be used")
 
     parser.add_argument("--tree-count",
                         type=int,
                         metavar="n",
-                        default=100,
+                        default=1,
                         help="indicates the number of trees that will be used")
 
     parser.add_argument("--test-file-suffix",

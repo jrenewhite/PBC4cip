@@ -28,7 +28,8 @@ class WinningSplitSelector:
 
         if (len(self.List) < self.__whichBetterToFind or currentGain > self.MinStoredValue):
             currentChildSelector = splitIterator.CreateCurrentChildSelector()
-            copyOfCurrentDistribution = copy.deepcopy(splitIterator.CurrentDistribution)
+            copyOfCurrentDistribution = copy.deepcopy(
+                splitIterator.CurrentDistribution)
             self.List.append(
                 tuple((currentGain, currentChildSelector, copyOfCurrentDistribution)))
             self.List.sort(key=cmp_to_key(Compare))
@@ -38,6 +39,8 @@ class WinningSplitSelector:
             index = min(self.__whichBetterToFind-1, len(self.List)-1)
 
             self.MinStoredValue = self.List[index][0]
+            return True
+        return False
 
     def IsWinner(self):
         return len(self.List) > 0

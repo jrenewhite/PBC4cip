@@ -2,7 +2,8 @@ from copy import copy
 from core.Item import SubsetRelation
 from core.FilteredCollection import FilteredCollection
 from core.DecisionTreeBuilder import SelectorContext
-from core.Item import ItemBuilder
+from core.Item import CutPointBasedBuilder, MultipleValuesBasedBuilder, ValueAndComplementBasedBuilder, MultivariateCutPointBasedBuilder
+from core.FeatureSelectors import CutPointSelector, MultipleValuesSelector, ValueAndComplementSelector, MultivariateCutPointSelector
 from itertools import chain
 from collections import OrderedDict
 
@@ -77,12 +78,18 @@ class EmergingPattern(object):
 class EmergingPatternCreator(object):
     def __init__(self, dataset):
         self.Dataset = dataset
+        self.__builderForType = {
+            CutPointSelector: CutPointBasedBuilder,
+            MultipleValuesSelector: MultipleValuesBasedBuilder,
+            ValueAndComplementSelector: ValueAndComplementBasedBuilder,
+            MultivariateCutPointSelector: MultivariateCutPointBasedBuilder
+        }
 
     def Create(self, contexts):
         pattern = EmergingPattern(self.Dataset)
         for context in contexts:
             childSelector = context.Selector
-            builder = ItemBuilder()
+            builder = self.__builderForType[context.Selector.__class__]()
             item = builder.GetItem(childSelector, context.Index)
             pattern.Items.append(item)
         return pattern

@@ -1,10 +1,6 @@
-from core.SplitIterator import SplitIterator, SingleFeatureSelector
-
-Unknown = -1
-EqualThan = 0
-DifferentThan = 1
-LessOrEqualThan = 2
-GreatherThan = 3
+from core.FeatureSelectors import SingleFeatureSelector, CutPointSelector, MultipleValuesSelector, ValueAndComplementSelector, MultivariateCutPointSelector
+from core.Dataset import Dataset
+import math
 
 
 class SubsetRelation(object):
@@ -16,55 +12,58 @@ class SubsetRelation(object):
     Different = 5
 
 
-class SingleValueItem(object):
+class Item(object):
 
-    def __init__(self, dataset, feature, itemType, value):
+    def __init__(self, dataset, feature):
         self.Dataset = dataset
         self.Feature = feature
-        self.Model = self.Dataset.Model
-        self.Value = value
-        self.ItemType = itemType
 
     def IsMatch(self, instance):
-        if self.Dataset.IsMissing(self.Feature, instance):
-            return False
-
-        value = self.GetValue(instance)
-
-        if self.ItemType == EqualThan:
-            return value == self.Value
-        elif self.ItemType == DifferentThan:
-            return value != self.Value
-        elif self.ItemType == LessOrEqualThan:
-            return value <= self.Value
-        elif self.ItemType == GreatherThan:
-            return value > self.Value
-        else:
-            return False
+        return False
 
     def CompareTo(self, other):
-        if not other or not isinstance(other, SingleValueItem):
-            return SubsetRelation.Unknown
+        return SubsetRelation.Unknown
 
-        if self.ItemType == EqualThan:
-            return self.CompareEqualsThan(other)
-        elif self.ItemType == DifferentThan:
-            return self.CompareDifferentThan(other)
-        elif self.ItemType == LessOrEqualThan:
-            return self.CompareLessOrEqualThan(other)
-        elif self.ItemType == GreatherThan:
-            return self.CompareGreaterThan(other)
+# region Univariate items
+
+
+class SingleValueItem(Item):
+
+    def __init__(self, dataset, feature, value):
+        super().__init__(dataset, feature)
+        self.Value = value
+
+    def IsMatch(self, instance):
+        return not self.Dataset.IsMissing(self.Feature, instance)
+
+    def GetValue(self, instance):
+        return self.Dataset.GetFeatureValue(self.Feature, instance)
+
+    def GetValueRepresentation(self):
+        if self.Dataset.IsNominalFeature(self.Feature):
+            return self.Feature[1][self.Value]
         else:
-            return SubsetRelation.Unknown
+            return self.Value
 
-    # region Comparison methods
-    def CompareEqualsThan(self, other):
-        if other.ItemType == EqualThan:
+    def __repr__(self):
+        return f"{self.Feature[0]} ? {self.GetValueRepresentation()}"
+
+
+class EqualThanItem(SingleValueItem):
+
+    def IsMatch(self, instance):
+        if super().IsMatch(instance):
+            return self.GetValue(instance) == self.Value
+        return False
+
+    def CompareTo(self, other):
+        if isinstance(other, EqualThanItem):
             if self.Value == other.Value:
                 return SubsetRelation.Equal
             else:
                 return SubsetRelation.Unrelated
-        elif other.ItemType == DifferentThan:
+
+        if isinstance(other, DifferentThanItem):
             if self.Value == other.Value:
                 return SubsetRelation.Unrelated
             if self.Dataset.IsNominalFeature(self.Feature):
@@ -77,13 +76,25 @@ class SingleValueItem(object):
 
         return SubsetRelation.Unrelated
 
-    def CompareDifferentThan(self, other):
-        if other.ItemType == DifferentThan:
+    def __repr__(self):
+        return f"{self.Feature[0]} = {self.GetValueRepresentation()}"
+
+
+class DifferentThanItem(SingleValueItem):
+
+    def IsMatch(self, instance):
+        if super().IsMatch(instance):
+            return self.GetValue(instance) != self.Value
+        return False
+
+    def CompareTo(self, other):
+        if isinstance(other, DifferentThanItem):
             if self.Value == other.Value:
                 return SubsetRelation.Equal
             else:
                 return SubsetRelation.Unrelated
-        elif other.ItemType == EqualThan:
+
+        if isinstance(other, EqualThanItem):
             if self.Value == other.Value:
                 return SubsetRelation.Unrelated
             if self.Dataset.IsNominalFeature(self.Feature):
@@ -96,8 +107,19 @@ class SingleValueItem(object):
 
         return SubsetRelation.Unrelated
 
-    def CompareLessOrEqualThan(self, other):
-        if other.ItemType == LessOrEqualThan:
+    def __repr__(self):
+        return f"{self.Feature[0]} != {self.GetValueRepresentation()}"
+
+
+class LessOrEqualThanItem(SingleValueItem):
+
+    def IsMatch(self, instance):
+        if super().IsMatch(instance):
+            return self.GetValue(instance) <= self.Value
+        return False
+
+    def CompareTo(self, other):
+        if isinstance(other, LessOrEqualThanItem):
             if self.Value == other.Value:
                 return SubsetRelation.Equal
             if self.Value > other.Value:
@@ -106,69 +128,194 @@ class SingleValueItem(object):
                 return SubsetRelation.Subset
 
         return SubsetRelation.Unrelated
-
-    def CompareGreaterThan(self, other):
-        if other.ItemType == GreatherThan:
-            if self.Value == other.Value:
-                return SubsetRelation.Equal
-            if self.Value > other.Value:
-                return SubsetRelation.Subset
-            else:
-                return SubsetRelation.Superset
-
-        return SubsetRelation.Unrelated
-    # endregion
 
     def __repr__(self):
-        if self.ItemType == EqualThan:
-            return f"{self.Feature[0]} = {self.GetValueRepresentation()}"
-        elif self.ItemType == DifferentThan:
-            return f"{self.Feature[0]} != {self.GetValueRepresentation()}"
-        elif self.ItemType == LessOrEqualThan:
-            return f"{self.Feature[0]} <= {self.GetValueRepresentation()}"
-        elif self.ItemType == GreatherThan:
-            return f"{self.Feature[0]} > {self.GetValueRepresentation()}"
-        else:
-            return super().__repr__()
+        return f"{self.Feature[0]} <= {self.GetValueRepresentation()}"
 
-    def GetValue(self, instance):
-        return self.Dataset.GetFeatureValue(self.Feature, instance)
 
-    def GetValueRepresentation(self):
-        if self.Dataset.IsNominalFeature(self.Feature):
-            return self.Feature[1][self.Value]
-        else:
-            return self.Value
+class GreatherThanItem(SingleValueItem):
+
+    def IsMatch(self, instance):
+        if super().IsMatch(instance):
+            return self.GetValue(instance) > self.Value
+        return False
+
+    def CompareTo(self, other):
+        if isinstance(other, GreatherThanItem):
+            if self.Value == other.Value:
+                return SubsetRelation.Equal
+            if self.Value > other.Value:
+                return SubsetRelation.Subset
+            else:
+                return SubsetRelation.Superset
+
+        return SubsetRelation.Unrelated
+
+    def __repr__(self):
+        return f"{self.Feature[0]} > {self.GetValueRepresentation()}"
 
 
 class ItemBuilder(object):
     def GetItem(self, generalSelector, index):
-        if generalSelector.Selector == SingleFeatureSelector.CutPointSelector:
-            if index == 0:
-                return SingleValueItem(generalSelector.Dataset, generalSelector.Feature, LessOrEqualThan, generalSelector.CutPoint)
-            elif index == 1:
-                return SingleValueItem(generalSelector.Dataset, generalSelector.Feature, GreatherThan, generalSelector.CutPoint)
-            else:
-                raise Exception("Invalid index value for CutPointSelector")
-        elif generalSelector.Selector == SingleFeatureSelector.ValueAndComplementSelector:
-            if index == 0:
-                return SingleValueItem(generalSelector.Dataset, generalSelector.Feature, EqualThan, generalSelector.Value)
-            elif index == 1:
-                return SingleValueItem(generalSelector.Dataset, generalSelector.Feature, DifferentThan, generalSelector.Value)
-            else:
-                raise Exception(
-                    "Invalid index value for ValueAndComplementSelector")
-        elif generalSelector.Selector == SingleFeatureSelector.MultipleValuesSelector:
-            if index < 0 or index >= len(generalSelector.Values):
-                raise Exception(
-                    "Invalid index value for MultipleValuesSelector")
-            return SingleValueItem(generalSelector.Dataset, generalSelector.Feature, EqualThan, generalSelector.Values[index])
+        return None
+
+
+class CutPointBasedBuilder(ItemBuilder):
+    def GetItem(self, generalSelector, index):
+        if not isinstance(generalSelector, CutPointSelector):
+            raise Exception(
+                f"Unexpected type of selector {generalSelector.__class__.__name__}. Was expecting CutPointSelector")
+
+        if index == 0:
+            return LessOrEqualThanItem(generalSelector.Dataset, generalSelector.Feature, generalSelector.CutPoint)
+        elif index == 1:
+            return GreatherThanItem(generalSelector.Dataset, generalSelector.Feature, generalSelector.CutPoint)
+        else:
+            raise Exception("Invalid index value for CutPointSelector")
+
+
+class ValueAndComplementBasedBuilder(ItemBuilder):
+    def GetItem(self, generalSelector, index):
+        if not isinstance(generalSelector, ValueAndComplementSelector):
+            raise Exception(
+                f"Unexpected type of selector {generalSelector.__class__.__name__}. Was expecting ValueAndComplementSelector")
+        if index == 0:
+            return EqualThanItem(generalSelector.Dataset, generalSelector.Feature, generalSelector.Value)
+        elif index == 1:
+            return DifferentThanItem(generalSelector.Dataset, generalSelector.Feature, generalSelector.Value)
         else:
             raise Exception(
-                "Unknown selector")
+                "Invalid index value for ValueAndComplementSelector")
 
 
-def CompareSingleValueItems(left, right):
-    if left.Feature == right.Feature:
-        return left.CompareTo(right)
-    return SubsetRelation.Unrelated
+class MultipleValuesBasedBuilder(ItemBuilder):
+    def GetItem(self, generalSelector, index):
+        if not isinstance(generalSelector, MultipleValuesSelector):
+            raise Exception(
+                f"Unexpected type of selector {generalSelector.__class__.__name__}. Was expecting ValueAndComplementSelector")
+        if index < 0 or index >= len(generalSelector.Values):
+            raise Exception(
+                "Invalid index value for MultipleValuesSelector")
+        return EqualThanItem(generalSelector.Dataset, generalSelector.Feature, generalSelector.Values[index])
+# endregion
+
+# region Multivariate items
+
+
+class MultivariateSingleValueItem(Item):
+    def __init__(self, dataset, features, value, weights):
+        super().__init__(dataset, None)
+        self.Value = value
+        self.Weights = weights
+        self.Features = features
+        self.FeaturesHash = sum([hash(feature[0])
+                                 for feature in self.Features])
+        self._parallel = 0.001
+
+
+class MultivariateLessOrEqualThanItem(MultivariateSingleValueItem):
+
+    def IsMatch(self, instance):
+        instanceValue = self.Dataset.ScalarProjection(
+            instance, self.Features, self.Weights)
+        if math.isnan(instanceValue):
+            return False
+        return instanceValue <= self.Value
+
+    def CompareTo(self, other):
+        if isinstance(other, MultivariateLessOrEqualThanItem):
+            if self.FeaturesHash != other.FeaturesHash:
+                return SubsetRelation.Unrelated
+            if len(self.Features) != len(other.Features):
+                return SubsetRelation.Unrelated
+
+            try:
+                proportion = list(other.Weights.values())[
+                    0] / list(self.Weights.values())[0]
+                for feature in list(self.Weights.keys()):
+                    if abs(self.Weights[feature]*proportion - other.Weights[feature]) > self._parallel:
+                        return SubsetRelation.Unrelated
+
+                if abs(self.Value * proportion - other.Value) < self._parallel:
+                    return SubsetRelation.Equal
+
+                if self.Value * proportion > other.Value:
+                    return SubsetRelation.Superset
+                else:
+                    return SubsetRelation.Subset
+            except ZeroDivisionError:
+                return SubsetRelation.Unrelated
+
+        return SubsetRelation.Unrelated
+
+    def __repr__(self):
+        linearCombination = ' + '.join(
+            map(lambda weight: str(self.Weights[weight]) + " * " + weight[0], self.Weights))
+        return f"{linearCombination} <= {self.Value}"
+
+
+class MultivariateGreatherThanItem(MultivariateSingleValueItem):
+
+    def IsMatch(self, instance):
+        instanceValue = self.Dataset.ScalarProjection(
+            instance, self.Features, self.Weights)
+        if math.isnan(instanceValue):
+            return False
+        return instanceValue <= self.Value
+
+    def CompareTo(self, other):
+        if isinstance(other, MultivariateGreatherThanItem):
+            if self.FeaturesHash != other.FeaturesHash:
+                return SubsetRelation.Unrelated
+            if len(self.Features) != len(other.Features):
+                return SubsetRelation.Unrelated
+
+            try:
+                proportion = list(other.Weights.values())[
+                    0] / list(self.Weights.values())[0]
+                for feature in list(self.Weights.keys()):
+                    if abs(self.Weights[feature]*proportion - other.Weights[feature]) > self._parallel:
+                        return SubsetRelation.Unrelated
+
+                if abs(self.Value * proportion - other.Value) < self._parallel:
+                    return SubsetRelation.Equal
+
+                if self.Value * proportion > other.Value:
+                    return SubsetRelation.Subset
+                else:
+                    return SubsetRelation.Superset
+            except ZeroDivisionError:
+                return SubsetRelation.Unrelated
+
+        return SubsetRelation.Unrelated
+
+    def __repr__(self):
+        linearCombination = ' + '.join(
+            map(lambda weight: str(self.Weights[weight]) + " * " + weight[0], self.Weights))
+
+        return f"{linearCombination} <= {self.Value}"
+
+
+class MultivariateCutPointBasedBuilder(ItemBuilder):
+    def GetItem(self, generalSelector, index):
+        if not isinstance(generalSelector, MultivariateCutPointSelector):
+            raise Exception(
+                f"Unexpected type of selector {generalSelector.__class__.__name__}. Was expecting CutPointSelector")
+        if index == 0:
+            return MultivariateLessOrEqualThanItem(
+                generalSelector.Dataset, generalSelector.Features, generalSelector.CutPoint, generalSelector.Weights)
+        elif index == 1:
+            return MultivariateGreatherThanItem(
+                generalSelector.Dataset, generalSelector.Features, generalSelector.CutPoint, generalSelector.Weights)
+        else:
+            raise Exception("Invalid index value for CutPointSelector")
+
+
+# endregion
+
+
+class ItemComparer(object):
+    def Compare(self, left, right):
+        if left.Feature == right.Feature or (not left.Feature and not right.Feature):
+            return left.CompareTo(right)
+        return SubsetRelation.Unrelated

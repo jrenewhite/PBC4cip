@@ -7,7 +7,7 @@ from functools import partial
 from core.SupervisedClassifier import DecisionTreeClassifier
 from core.RandomSampler import SampleWithoutRepetition
 from core.EmergingPatterns import EmergingPatternCreator, EmergingPatternComparer, EmergingPatternSimplifier
-from core.Item import ItemBuilder, CompareSingleValueItems
+from core.Item import ItemComparer
 from core.FilteredCollection import FilteredCollection
 
 
@@ -46,9 +46,9 @@ class PatternMiner:
         self.Patterns = list()
         self.__emergingPatternCreator = EmergingPatternCreator(self.Dataset)
         self.__emergingPatternComparer = EmergingPatternComparer(
-            CompareSingleValueItems)
+            ItemComparer().Compare)
         self.__emergingPatternSimplifier = EmergingPatternSimplifier(
-            CompareSingleValueItems)
+            ItemComparer().Compare)
         self.__minimal = FilteredCollection(
             self.__emergingPatternComparer.Compare, self.FilterRelation)
         self.Patterns = self.DoMine(

@@ -1,86 +1,102 @@
 import math
 from core.Helpers import FindDistribution, Substract
 import operator
+from core.FeatureSelectors import CutPointSelector, MultipleValuesSelector, ValueAndComplementSelector, MultivariateCutPointSelector
+from copy import copy, deepcopy
+import numpy as np
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+
+# region Univariate Split
+
+
+class SplitIteratorProvider(object):
+    def __init__(self, dataset):
+        self.Dataset = dataset
+
+    def GetSplitIterator(self, feature):
+        currentFeature = self.Dataset.GetAttribute(feature)
+        if self.Dataset.IsNominalFeature(currentFeature):
+            return NominalSplitIterator(self.Dataset, currentFeature)
+        else:
+            return NumericSplitIterator(self.Dataset, currentFeature)
 
 
 class SplitIterator(object):
-
     def __init__(self, dataset, feature):
         self.Dataset = dataset
         self.Model = self.Dataset.Model
         self.Class = self.Dataset.Class
-        self.Feature = self.Dataset.GetAttribute(feature)
+        self.Feature = feature
         self.CurrentDistribution = None
+        self._initialized = False
+        self._numClasses = 0
+        self._instances = 0
 
-        self.__iterators = {"integer": self.NumericOnPoint,
-                            "real": self.NumericCenterBetweenPoints,
-                            "numeric": self.NumericCenterBetweenPoints,
-                            "nominal": self.ValueAndComplement}
-        self.__initialized = False
-        self.__numClasses = 0
-        self.__instances = 0
-        self.__currentIndex = None
-        self.__lastClassValue = None
-        self.__sortedInstances = None
-        self.__selectorFeatureValue = None
-        self.__perValueDistribution = None
-        self.__totalDistribution = None
-        self.__valuesCount = None
-        self.__existingValues = None
-        self.__iteratingTwoValues = None
-        self.__valueIndex = None
-        self.__twoValuesIterated = None
-
+    # region Common methods
     def Initialize(self, instances):
         if not self.Model:
             raise Exception("Model is null")
         if self.Class[1] in ['numeric', 'real', 'integer', 'string']:
             raise Exception("Cannot use this iterator on non-nominal class")
-        self.__numClasses = len(self.Dataset.GetClasses())
-
-        if self.Dataset.IsNominalFeature(self.Feature):
-            self.InitializeNominal(instances)
-        else:
-            self.InitializeNumeric(instances)
-        self.__instances = len(instances)
-        self.__initialized = True
+        self._numClasses = len(self.Dataset.GetClasses())
+        self._instances = len(instances)
+        self.CurrentDistribution = [[] for i in range(2)]
+        self._initialized = True
 
     def FindNext(self):
-        if not self.__initialized:
+        if not self._initialized:
             raise Exception("Iterator not initialized")
-        if self.Dataset.IsNominalFeature(self.Feature):
-            return self.FindNextNominal()
-        else:
-            return self.FindNextNumeric()
+        return False
 
     def CreateCurrentChildSelector(self):
-        selector = None
+        return None
+    # endregion
+
+    # region Support methods
+    def GetFeatureIdx(self):
+        return self.Dataset.GetFeatureIdx(self.Feature)
+
+    def IsMissing(self, instance):
+        return self.Dataset.IsMissing(self.Feature, instance)
+
+    def GetFeatureValue(self, instance):
+        return self.Dataset.GetFeatureValue(self.Feature, instance)
+
+    def GetClassValue(self, instance):
+        return self.Dataset.GetClasses().index(instance[self.Dataset.GetClassIdx()])
+    # endregion
+
+
+class NumericSplitIterator(SplitIterator):
+
+    def __init__(self, dataset, feature):
+        super().__init__(dataset, feature)
+        self.__cuttingStrategy = None
+        self.__currentIndex = 0
+        self.__lastClassValue = None
+        self.__sortedInstances = None
+        self.__selectorFeatureValue = None
+
+    def Initialize(self, instances):
+        super().Initialize(instances)
+
         if self.Dataset.IsNominalFeature(self.Feature):
-            if self.__iteratingTwoValues:
-                selector = SingleFeatureSelector(
-                    self.Dataset, self.Feature, SingleFeatureSelector.MultipleValuesSelector)
-                selector.Values = list(self.__perValueDistribution.keys())
-            else:
-                selector = SingleFeatureSelector(
-                    self.Dataset, self.Feature, SingleFeatureSelector.ValueAndComplementSelector)
-                selector.Value = self.__existingValues[self.__valueIndex]
+            raise Exception("Cannot use this iterator on non-numeric feature")
+
+        if self.Feature[1].lower() in ["integer"]:
+            self.__cuttingStrategy = self.NumericOnPoint
+        elif self.Feature[1].lower() in ["real", "numeric"]:
+            self.__cuttingStrategy = self.NumericCenterBetweenPoints
         else:
-            selector = SingleFeatureSelector(
-                self.Dataset, self.Feature, SingleFeatureSelector.CutPointSelector)
-            selector.CutPoint = self.__selectorFeatureValue
-
-        return selector
-
-    # region Numeric splitIterators
-    def InitializeNumeric(self, instances):
-        self.CurrentDistribution = [list()]*2
+            raise Exception(
+                f"Feature type {self.Feature[1]} is not considered")
 
         self.__sortedInstances = list(
             filter(lambda element: not self.IsMissing(element[0]), instances))
         self.__sortedInstances.sort(
             key=lambda element: self.GetFeatureValue(element[0]))
 
-        self.CurrentDistribution[0] = [0]*self.__numClasses
+        self.CurrentDistribution[0] = [0]*self._numClasses
         self.CurrentDistribution[1] = FindDistribution(
             self.__sortedInstances, self.Model, self.Dataset.Class)
 
@@ -90,7 +106,8 @@ class SplitIterator(object):
         self.__currentIndex = -1
         self.__lastClassValue = self.FindNextClass(0)
 
-    def FindNextNumeric(self):
+    def FindNext(self):
+        super().FindNext()
         if (self.__currentIndex >= len(self.__sortedInstances) - 1):
             return False
 
@@ -104,13 +121,20 @@ class SplitIterator(object):
             if self.GetFeatureValue(instance) != self.GetFeatureValue(self.__sortedInstances[self.__currentIndex+1][0]):
                 nextClassValue = self.FindNextClass(self.__currentIndex + 1)
                 if (self.__lastClassValue != nextClassValue) or (self.__lastClassValue == -1 and nextClassValue == -1):
-                    CuttingStrategy = self.__iterators[self.Feature[1].lower()]
-                    self.__selectorFeatureValue = CuttingStrategy(instance)
+                    # CuttingStrategy = self.__iterators[self.Feature[1].lower()]
+                    self.__selectorFeatureValue = self.__cuttingStrategy(
+                        instance)
                     self.__lastClassValue = nextClassValue
                     return True
             self.__currentIndex += 1
         return False
 
+    def CreateCurrentChildSelector(self):
+        selector = CutPointSelector(self.Dataset, self.Feature)
+        selector.CutPoint = self.__selectorFeatureValue
+        return selector
+
+    # region Helping methods
     def FindNextClass(self, index):
         currentClass = self.GetClassValue(self.__sortedInstances[index][0])
         currentValue = self.GetFeatureValue(self.__sortedInstances[index][0])
@@ -128,18 +152,29 @@ class SplitIterator(object):
         return (instance[self.GetFeatureIdx()] + self.__sortedInstances[self.__currentIndex][0][self.GetFeatureIdx()]) / 2
     # endregion
 
-    # region Nominal splitIterator
 
-    def InitializeNominal(self, instances):
+class NominalSplitIterator(SplitIterator):
+
+    def __init__(self, dataset, feature):
+        super().__init__(dataset, feature)
+        self.__perValueDistribution = None
+        self.__totalDistribution = None
+        self.__valuesCount = None
+        self.__existingValues = None
+        self.__iteratingTwoValues = None
+        self.__valueIndex = None
+        self.__twoValuesIterated = None
+
+    def Initialize(self, instances):
+        super().Initialize(instances)
         self.__perValueDistribution = {}
-        self.__totalDistribution = [0]*self.__numClasses
-        self.CurrentDistribution = [list()]*2
+        self.__totalDistribution = [0]*self._numClasses
 
         for instance in instances:
             if self.IsMissing(instance[0]):
                 continue
             value = self.GetFeatureValue(instance[0])
-            current = [0]*self.__numClasses
+            current = [0]*self._numClasses
             if not value in self.__perValueDistribution:
                 self.__perValueDistribution.update({value: current})
 
@@ -147,15 +182,15 @@ class SplitIterator(object):
             self.__perValueDistribution[value][classIdx] += instance[1]
             self.__totalDistribution[classIdx] += instance[1]
 
-        self.CurrentDistribution = [list()]*2
         self.__valuesCount = len(self.__perValueDistribution)
         self.__existingValues = list(self.__perValueDistribution.keys())
         self.__iteratingTwoValues = (self.__valuesCount == 2)
         self.__valueIndex = -1
         self.__twoValuesIterated = False
 
-    def FindNextNominal(self):
-        if self.__valuesCount == self.__instances:
+    def FindNext(self):
+        super().FindNext()
+        if self.__valuesCount == self._instances:
             return False
         if self.__iteratingTwoValues:
             if self.__twoValuesIterated:
@@ -172,125 +207,181 @@ class SplitIterator(object):
                 self.__perValueDistribution[self.__existingValues[self.__valueIndex]])
             return True
 
-    def ValueAndComplement(self, instance):
-        pass
+    def CreateCurrentChildSelector(self):
+        if self.__iteratingTwoValues:
+            selector = MultipleValuesSelector(self.Dataset, self.Feature)
+            selector.Values = list(self.__perValueDistribution.keys())
+        else:
+            selector = ValueAndComplementSelector(self.Dataset, self.Feature)
+            selector.Value = self.__existingValues[self.__valueIndex]
+        return selector
+
+    # region Helping methods
 
     def CalculateCurrent(self, current):
         self.CurrentDistribution[0] = current
         self.CurrentDistribution[1] = Substract(
             self.__totalDistribution, current)
-
     # endregion
 
-    # region Support methods
-
-    def GetFeatureIdx(self):
-        return self.Dataset.GetFeatureIdx(self.Feature)
-
-    def IsMissing(self, instance):
-        return self.Dataset.IsMissing(self.Feature, instance)
-
-    def GetFeatureValue(self, instance):
-        return self.Dataset.GetFeatureValue(self.Feature, instance)
-
-    def GetClassValue(self, instance):
-        return self.Dataset.GetClasses().index(instance[self.Dataset.GetClassIdx()])
-    # endregion
+# endregion
 
 
-class SingleFeatureSelector(object):
-
-    CutPointSelector = 1
-    ValueAndComplementSelector = 2
-    MultipleValuesSelector = 3
-
-    def __init__(self, dataset, feature, selector):
-        self.ChildrenCount = 2
+class MultivariateSplitIteratorProvider(SplitIteratorProvider):
+    def __init__(self, dataset):
         self.Dataset = dataset
-        self.Model = dataset.Model
-        self.Feature = feature
-        self.Selector = selector
-        self.CutPoint = math.nan
-        self.Values = []
-        self.Value = math.nan
 
-    def Select(self, instance):
-        if self.Dataset.IsMissing(self.Feature, instance):
-            return None
-        if self.Selector == SingleFeatureSelector.CutPointSelector:
-            return self.SelectCutPoint(instance)
-        elif self.Selector == SingleFeatureSelector.MultipleValuesSelector:
-            return self.SelectMultipleValues(instance)
-        elif self.Selector == SingleFeatureSelector.ValueAndComplementSelector:
-            return self.SelectValueAndComplement(instance)
-        else:
-            return None
-
-    def SelectCutPoint(self, instance):
-        if self.Dataset.IsNominalFeature(self.Feature):
-            raise Exception("Cannot use cutpoint on nominal data")
-        if self.Dataset.GetFeatureValue(self.Feature, instance) <= self.CutPoint:
-            return [1, 0]
-        else:
-            return [0, 1]
-
-    def SelectMultipleValues(self, instance):
-        if not self.Dataset.IsNominalFeature(self.Feature):
-            raise Exception("Cannot use multiple values on non-nominal data")
-        value = self.Dataset.GetFeatureValue(self.Feature, instance)
-        index = self.Values.index(value)
-        if index == -1:
-            return None
-        result = [0]*self.ChildrenCount
-        result[index] = 1
+    def GetMultivariateSplitIterator(self, features, wMin):
+        result = MultivariateOrderedFeatureSplitIterator(
+            self.Dataset, features)
+        result.WMin = wMin
         return result
 
-    def SelectValueAndComplement(self, instance):
-        if not self.Dataset.IsNominalFeature(self.Feature):
-            raise Exception("Cannot use multiple values on non-nominal data")
-        if self.Dataset.GetFeatureValue(self.Feature, instance) == self.Value:
-            return [1, 0]
-        else:
-            return [0, 1]
 
-    def ToString(self, index):
-        if self.Selector == SingleFeatureSelector.CutPointSelector:
-            if index == 0:
-                return f"{self.Feature[0]}<={self.CutPoint}"
-            else:
-                return f"{self.Feature[0]}>{self.CutPoint}"
-        elif self.Selector == SingleFeatureSelector.MultipleValuesSelector:
-            return f"{self.Feature[0]}={self.Dataset.GetValueOfIndex(self.Feature,index)}"
-        elif self.Selector == SingleFeatureSelector.ValueAndComplementSelector:
-            if index == 0:
-                return f"{self.Feature[0]}={self.Dataset.GetValueOfIndex(self.Feature,self.Value)}"
-            else:
-                return f"{self.Feature[0]}<>{self.Dataset.GetValueOfIndex(self.Feature,self.Value)}"
-        else:
-            return "???"
+class MultivariateSplitIterator(SplitIterator):
+    def __init__(self, dataset, features):
+        super().__init__(dataset, None)
+        self.Features = features
 
-    def __format__(self, index):
-        if self.Selector == SingleFeatureSelector.CutPointSelector:
-            if index == 0:
-                return f"{self.Feature[0]}<={self.CutPoint}"
-            else:
-                return f"{self.Feature[0]}>{self.CutPoint}"
-        elif self.Selector == SingleFeatureSelector.MultipleValuesSelector:
-            return f"{self.Feature[0]}={self.Dataset.GetValueOfIndex(self.Feature[0],index)}"
-        elif self.Selector == SingleFeatureSelector.ValueAndComplementSelector:
-            if index == 0:
-                return f"{self.Feature[0]}={self.Dataset.GetValueOfIndex(self.Feature[0],self.Value)}"
-            else:
-                return f"{self.Feature[0]}<>{self.Dataset.GetValueOfIndex(self.Feature[0],self.Value)}"
-        else:
-            return super().__str__()
+    def Initialize(self, instances):
+        raise Exception("Must initialize as multivariate")
 
-    def __repr__(self):
-        if self.Selector == SingleFeatureSelector.CutPointSelector:
-            return f"{self.Feature[0]}<={self.CutPoint}"
-        elif self.Selector == SingleFeatureSelector.MultipleValuesSelector:
-            return f"{self.Feature[0]}in[{', '.join(map(lambda value: self.Dataset.GetValueOfIndex(self.Feature[0],value),self.Values))}]"
-        elif self.Selector == SingleFeatureSelector.ValueAndComplementSelector:
-            return f"{self.Feature[0]}={self.Dataset.GetValueOfIndex(self.Feature[0],self.Value)}"
+    def InitializeMultivariate(self, instances, node):
+        if not self.Model:
+            raise Exception("Model is null")
+        if self.Class[1] in ['numeric', 'real', 'integer', 'string']:
+            raise Exception("Cannot use this iterator on non-nominal class")
+        if any(self.Dataset.IsNominalFeature(feature) for feature in self.Features):
+            raise Exception("Cannot use this iterator on numeric features")
+
+        self._numClasses = len(self.Dataset.GetClasses())
+        self._instances = len(instances)
+        self.CurrentDistribution = [[] for i in range(2)]
+        self._initialized = True
+
+    def FindNext(self):
+        super().FindNext()
+
+
+class MultivariateOrderedFeatureSplitIterator(MultivariateSplitIterator):
+    def __init__(self, dataset, features):
+        super().__init__(dataset, features)
+        self.__filteredInstances = None
+        self.__projections = None
+        self.__currentIndex = 0
+        self.__lastClassValue = None
+        self.__sortedInstances = None
+        self.__cuttingStrategy = None
+        self.__selectorFeatureValue = None
+        self.__weights = None
+        self.WMin = None
+
+    def InitializeMultivariate(self, instances, node):
+        super().InitializeMultivariate(instances, node)
+
+        if not self.__cuttingStrategy:
+            self.__cuttingStrategy = self.NumericOnPoint
         else:
-            return "???"
+            self.__cuttingStrategy = self.NumericCenterBetweenPoints
+
+        self.__filteredInstances = list(
+            filter(lambda instance: not any(self.Dataset.IsMissing(feature, instance[0]) for feature in self.Features), instances))
+
+        self.__projections = self.GetProjections(self.__filteredInstances)
+
+        if not self.__projections or len(self.__projections) == 0:
+            return False
+
+        self.__sortedInstances = list()
+
+        self.__sortedInstances = [(self.__filteredInstances[i][0], self.__filteredInstances[i][1],
+                                   self.__projections[i]) for i in range(len(self.__filteredInstances))]
+        self.__sortedInstances.sort(key=lambda instance: instance[2])
+
+        self.CurrentDistribution[0] = [0]*self._numClasses
+        self.CurrentDistribution[1] = FindDistribution(
+            self.__sortedInstances, self.Model, self.Dataset.Class)
+
+        self.__currentIndex = -1
+        self.__lastClassValue = self.FindNextClass(0)
+        return True
+
+    def FindNext(self):
+        super().FindNext()
+        if (self.__currentIndex >= len(self.__sortedInstances) - 1):
+            return False
+
+        self.__currentIndex += 1
+        while self.__currentIndex < len(self.__sortedInstances) - 1:
+            instance = self.__sortedInstances[self.__currentIndex][0]
+            value = self.__sortedInstances[self.__currentIndex][2]
+            objClass = self.GetClassValue(instance)
+
+            self.CurrentDistribution[0][objClass] += self.__sortedInstances[self.__currentIndex][1]
+            self.CurrentDistribution[1][objClass] -= self.__sortedInstances[self.__currentIndex][1]
+
+            if value != self.__sortedInstances[self.__currentIndex+1][2]:
+                nextClassValue = self.FindNextClass(self.__currentIndex + 1)
+                if (self.__lastClassValue != nextClassValue) or (self.__lastClassValue == -1 and nextClassValue == -1):
+                    # CuttingStrategy = self.__iterators[self.Feature[1].lower()]
+                    self.__selectorFeatureValue = self.__cuttingStrategy(value)
+                    self.__lastClassValue = nextClassValue
+                    return True
+            self.__currentIndex += 1
+        return False
+
+    def CreateCurrentChildSelector(self):
+        selector = MultivariateCutPointSelector(self.Dataset, self.Features)
+        selector.CutPoint = self.__selectorFeatureValue
+        selector.Weights = self.__weights
+        return selector
+
+    def FindNextClass(self, index):
+        currentClass = self.GetClassValue(self.__sortedInstances[index][0])
+        currentValue = self.__sortedInstances[index][2]
+        index += 1
+        while index < len(self.__sortedInstances) and currentValue == self.__sortedInstances[index][2]:
+            if currentClass != self.GetClassValue(self.__sortedInstances[index][0]):
+                return -1
+            index += 1
+        return currentClass
+
+    def GetProjections(self, instances):
+        classIdx = self.Dataset.GetClassIdx()
+        featuresIdxs = [self.Dataset.GetFeatureIdx(
+            feature) for feature in self.Features]
+        ldaData = [[instance[0][featureIdx] for featureIdx in featuresIdxs]
+                   for instance in instances]
+        ldaTargets = [self.Dataset.GetIndexOfValue(
+            self.Class[0], instance[0][classIdx]) for instance in instances]
+
+        lda = LDA(n_components=1)
+        try:
+            ldaOutput = lda.fit(ldaData, ldaTargets).transform(ldaData)
+
+            if len(ldaOutput) == 0:
+                return list()
+
+            w = lda.coef_[0]
+            if len(w) == 0:
+                return list()
+
+            self.__weights = {self.Features[i]: w[i]
+                              for i in range(0, len(self.Features))}
+
+            w_norm = math.sqrt(sum(map(lambda x: math.pow(x, 2), w)))
+
+            for x in w:
+                if abs(x/w_norm) < self.WMin:
+                    return list()
+
+            return list(map(lambda r: r[0], ldaOutput))
+
+        except Exception as e:
+            return list()
+
+    def NumericOnPoint(self, value):
+        return value
+
+    def NumericCenterBetweenPoints(self, value):
+        return (value + self.__sortedInstances[self.__currentIndex][2]) / 2

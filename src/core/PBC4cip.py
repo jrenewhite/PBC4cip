@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import math
 from io import StringIO, BytesIO
-from core.DecisionTreeBuilder import DecisionTreeBuilder
+from core.DecisionTreeBuilder import DecisionTreeBuilder, MultivariateDecisionTreeBuilder
 from core.PatternMiner import PatternMiner
-from core.DistributionEvaluator import Hellinger
+from core.DistributionEvaluator import Hellinger, MultiClassHellinger
 from core.DistributionTester import PureNodeStopCondition, AlwaysTrue
 from core.Item import SubsetRelation
 from core.Dataset import Dataset
@@ -23,10 +23,16 @@ class PBC4cip:
         self.__votesSum = None
         self.__classDistribution = None
 
-    def Training(self, treeCount=None):
+    def Training(self, multivariate, treeCount=None):
         miner = PatternMiner(self.Dataset)
-        miner.DecisionTreeBuilder = DecisionTreeBuilder(miner.Dataset)
-        miner.DecisionTreeBuilder.DistributionEvaluator = Hellinger
+
+        if not multivariate:
+            miner.DecisionTreeBuilder = DecisionTreeBuilder(miner.Dataset)
+            miner.DecisionTreeBuilder.DistributionEvaluator = Hellinger
+        else:
+            miner.DecisionTreeBuilder = MultivariateDecisionTreeBuilder(miner.Dataset)
+            miner.DecisionTreeBuilder.DistributionEvaluator = MultiClassHellinger
+
         miner.DecisionTreeBuilder.StopCondition = PureNodeStopCondition
 
         if not treeCount:
