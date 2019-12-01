@@ -133,14 +133,14 @@ class EmergingPatternComparer(object):
         else:
             return SubsetRelation.Unrelated
 
-    def IsSubset(self, leftPattern, rightPattern):
-        leftItems = rightPattern.Items
-        rightItems = leftPattern.Items
-        relations = list(map(lambda leftItem, rightItem: self.Comparer(
-            leftItem, rightItem), leftItems, rightItems))
-        subsetRelations = list(filter(lambda relation: relation == SubsetRelation.Equal or relation == SubsetRelation.Subset,
-                                      relations))
-        return len(subsetRelations) > 0
+    def IsSubset(self, pat1, pat2):
+        def f(x, y):
+            relation = self.Comparer(x, y)
+            return relation == SubsetRelation.Equal or relation == SubsetRelation.Subset
+
+        result = all(any(f(x, y) for y in pat2.Items)
+                     for x in pat1.Items)
+        return result
 
 
 class EmergingPatternSimplifier(object):
@@ -150,7 +150,9 @@ class EmergingPatternSimplifier(object):
             self.__comparer, SubsetRelation.Subset)
 
     def Simplify(self, pattern):
-        resultPattern = pattern.Clone()
+        resultPattern = EmergingPattern(pattern.Dataset)
+        resultPattern.Counts = copy(pattern.Counts)
+        resultPattern.Supports = copy(pattern.Supports)
         self.__collection.SetResultCollection(resultPattern.Items)
         self.__collection.AddRange(pattern.Items)
         return resultPattern

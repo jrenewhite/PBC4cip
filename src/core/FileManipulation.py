@@ -154,13 +154,41 @@ def WriteClassificationResults(evaluation, originalFile, outputDirectory, suffix
     results_out.write(f"## Measures per class")
     for classValue in range(len(evaluation.ConfusionMatrix.Classes)):
         auc = evaluation.ConfusionMatrix.AUCMeasure(classValue)
-        basicEvaluation = evaluation.ConfusionMatrix.ComputeBasicEvaluation(classValue)
+        basicEvaluation = evaluation.ConfusionMatrix.ComputeBasicEvaluation(
+            classValue)
         classLabel = evaluation.ConfusionMatrix.Classes[classValue]
         results_out.write(f"\r\n\r\n")
         results_out.write(f"### [{classLabel}]\r\n\r\n")
         results_out.write(f"- TP Rate: {basicEvaluation.TPrate}\r\n\r\n")
         results_out.write(f"- FP Rate: {basicEvaluation.FPrate}\r\n\r\n")
         results_out.write(f"- AUC: {auc}")
+    results_out.close()
+
+    return name
+
+
+def WriteResultsCSV(evaluation, originalFile, outputDirectory, resultsId):
+    if not evaluation:
+        return ""
+    if not os.path.exists(outputDirectory):
+        print(f"Creating output directory: {outputDirectory}")
+        os.makedirs(outputDirectory)
+
+    datasetName = os.path.splitext(os.path.basename(originalFile))[0]
+    name = os.path.join(outputDirectory, f"TestsResults{resultsId}.csv")
+
+    action = "Writing"
+    if os.path.exists(name):
+        action = "Appending"
+        results_out = open(name, "a+", newline='\n', encoding='utf-8')
+    else:
+        results_out = open(name, "w+", newline='\n', encoding='utf-8')
+        results_out.write(f"File,AUC\n")
+
+    auc = evaluation.ConfusionMatrix.AUCMeasure(0)
+
+    results_out.write(f"{datasetName},{str(auc)}\n")
+
     results_out.close()
 
     return name

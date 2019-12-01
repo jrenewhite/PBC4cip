@@ -22,10 +22,12 @@ class DecisionTree(object):
             return self.ComputeLeaves(self.TreeRootNode)
 
     def ComputeSizeTree(self, treeRootNode):
-        if not treeRootNode.Children:
+        if treeRootNode.Children == None:
             return 0
         else:
-            return max(map(lambda child: self.ComputeSizeTree(child), treeRootNode.Children))+1
+            childrenSize = list(map(lambda child: self.ComputeSizeTree(child), treeRootNode.Children))
+            childrenSize.append(0)
+            return max(childrenSize)+1
 
     def ComputeLeaves(self, treeRootNode):
         if treeRootNode.IsLeaf:

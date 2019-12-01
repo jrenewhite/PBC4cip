@@ -130,7 +130,7 @@ class LessOrEqualThanItem(SingleValueItem):
         return SubsetRelation.Unrelated
 
     def __repr__(self):
-        return f"{self.Feature[0]} <= {self.GetValueRepresentation()}"
+        return f"{self.Feature[0]} <= {self.GetValueRepresentation():.3f}"
 
 
 class GreatherThanItem(SingleValueItem):
@@ -152,7 +152,7 @@ class GreatherThanItem(SingleValueItem):
         return SubsetRelation.Unrelated
 
     def __repr__(self):
-        return f"{self.Feature[0]} > {self.GetValueRepresentation()}"
+        return f"{self.Feature[0]} > {self.GetValueRepresentation():.3f}"
 
 
 class ItemBuilder(object):

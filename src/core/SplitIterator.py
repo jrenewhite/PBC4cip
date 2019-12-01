@@ -73,9 +73,9 @@ class NumericSplitIterator(SplitIterator):
         super().__init__(dataset, feature)
         self.__cuttingStrategy = None
         self.__currentIndex = 0
-        self.__lastClassValue = None
+        self.__lastClassValue = 0
         self.__sortedInstances = None
-        self.__selectorFeatureValue = None
+        self.__selectorFeatureValue = 0
 
     def Initialize(self, instances):
         super().Initialize(instances)
@@ -149,7 +149,7 @@ class NumericSplitIterator(SplitIterator):
         return instance[self.GetFeatureIdx()]
 
     def NumericCenterBetweenPoints(self, instance):
-        return (instance[self.GetFeatureIdx()] + self.__sortedInstances[self.__currentIndex][0][self.GetFeatureIdx()]) / 2
+        return (instance[self.GetFeatureIdx()] + self.__sortedInstances[self.__currentIndex+1][0][self.GetFeatureIdx()]) / 2
     # endregion
 
 
