@@ -4,7 +4,8 @@ import os
 import argparse
 from tqdm import tqdm, trange
 from core.PBC4cip import PBC4cip
-from core.FileManipulation import WritePatternsBinary, WritePatternsCSV, ReadPatternsBinary, WriteClassificationResults
+from core.FileManipulation import WritePatternsBinary, WritePatternsCSV, ReadPatternsBinary, WriteClassificationResults, WriteResultsCSV
+from datetime import datetime
 
 
 def CheckSuffix(file, suffix):
@@ -35,11 +36,12 @@ def Train(file, outputDirectory, treeCount, multivariate, suffix=None):
     WritePatternsCSV(patterns, file, outputDirectory, suffix)
 
 
-def Classify(file, outputDirectory, suffix=None):
+def Classify(file, outputDirectory, resultsId, suffix=None):
     classifier = PBC4cip(file)
     patterns = ReadPatternsBinary(file, outputDirectory, suffix)
     evaluation = classifier.Classification(patterns)
     WriteClassificationResults(evaluation, file, outputDirectory, suffix)
+    WriteResultsCSV(evaluation, file, outputDirectory, resultsId)
 
 
 def Execute(args):
@@ -87,10 +89,14 @@ def Execute(args):
     tst = trange(len(testing_files), desc='Testing files...',
                  leave=True, unit="dataset")
     # tqdm(testing_files, desc="Testing patterns...", unit="dataset"):
+
+    now = datetime.now()  # current date and time
+    resultsId = now.strftime("%Y%m%d%H%M%S")
+
     for f in tst:
         tst.set_description(f"Classifying instances from {testing_files[f]}")
         tst.refresh()  # to show immediately the update
-        Classify(testing_files[f], args.output_directory,
+        Classify(testing_files[f], args.output_directory, resultsId,
                  args.test_file_suffix)
         tst.set_description(f"Results saved for {testing_files[f]}")
         tst.refresh()  # to show immediately the update
@@ -128,7 +134,7 @@ if __name__ == '__main__':
     parser.add_argument("--training-files",
                         type=str,
                         metavar="<*.dat/*.arff>",
-                        default=defaultTrainingFiles,
+                        # default=defaultTrainingFiles,
                         nargs="+",
                         help="a file or files that are going to be used to train the classifier")
 
@@ -141,7 +147,7 @@ if __name__ == '__main__':
     parser.add_argument("--input-files",
                         type=str,
                         metavar="<*.dat/*.arff>",
-                        default=defaultTestingFiles,
+                        # default=defaultTestingFiles,
                         nargs="+",
                         help="a file or files to be classified")
 
@@ -161,13 +167,13 @@ if __name__ == '__main__':
     parser.add_argument("--multivariate",
                         type=bool,
                         metavar="<True/False>",
-                        default=True,
+                        default=False,
                         help="states if multivariate variant is to be used")
 
     parser.add_argument("--tree-count",
                         type=int,
                         metavar="n",
-                        default=1,
+                        default=100,
                         help="indicates the number of trees that will be used")
 
     parser.add_argument("--test-file-suffix",
