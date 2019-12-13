@@ -33,7 +33,7 @@ class EmergingPattern(object):
             if(self.IsMatch(instance)):
                 matchesCount[instance[self.Dataset.GetClassIdx()]] += 1
         self.Counts = matchesCount
-        self.Supports = CalculateSupports(matchesCount)
+        self.Supports = self.CalculateSupports(matchesCount)
 
     def CalculateSupports(self, data):
         classInfo = self.Dataset.ClassInformation

@@ -133,7 +133,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--training-files",
                         type=str,
-                        metavar="<*.dat/*.arff>",
+                        metavar=defaultTrainingFiles[0],
                         # default=defaultTrainingFiles,
                         nargs="+",
                         help="a file or files that are going to be used to train the classifier")
