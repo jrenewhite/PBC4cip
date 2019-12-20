@@ -1,3 +1,8 @@
+def warn(*args, **kwargs):
+    pass
+import warnings
+warnings.warn = warn
+
 import math
 from core.Helpers import FindDistribution, Substract
 import operator

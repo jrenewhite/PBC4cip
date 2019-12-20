@@ -138,8 +138,10 @@ class EmergingPatternComparer(object):
             relation = self.Comparer(x, y)
             return relation == SubsetRelation.Equal or relation == SubsetRelation.Subset
 
-        result = all(any(f(x, y) for y in pat2.Items)
-                     for x in pat1.Items)
+        allComparisons = [[f(x, y) for y in pat2.Items]for x in pat1.Items]
+        result = all(any(x) for x in allComparisons)
+        # result = all(any(f(x, y) for y in pat2.Items)
+        #              for x in pat1.Items)
         return result
 
 

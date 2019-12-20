@@ -105,7 +105,7 @@ def Execute(args):
 if __name__ == '__main__':
 
     defaultDataDir = os.path.join(os.path.normpath(
-        os.path.join(os.getcwd(), os.pardir)), "data")
+        os.path.join(os.getcwd(), os.pardir)), "data","python")
     defaultOutputDir = os.path.join(os.path.normpath(
         os.path.join(os.getcwd(), os.pardir)), "output")
 
@@ -114,18 +114,24 @@ if __name__ == '__main__':
 
     # Some samples to test the program (they are already in the data folder)
     # region Default files
-    defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tra.dat"))
-    defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tst.dat"))
-    defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "car-good"), "car-good-5-1tra.dat"))
-    defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "car-good"), "car-good-5-1tst.dat"))
-    defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "iris0"), "iris0-5-1tra.dat"))
-    defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-        defaultDataDir), "iris0"), "iris0-5-1tst.dat"))
+    #winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tra.dat
+    # C:\Users\jrenewhite\source\repos\PBC4cip\dataMulti\B\abalone-17_vs_7-8-9-10\abalone-17_vs_7-8-9-10-5-1tra.dat
+    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tra.dat"))
+    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tst.dat"))
+    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "winequality-red-3_vs_5"), "winequality-red-3_vs_5-5-2tra.dat"))
+    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "winequality-red-3_vs_5"), "winequality-red-3_vs_5-5-2tst.dat"))
+    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "car-good"), "car-good-5-1tra.dat"))
+    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "car-good"), "car-good-5-1tst.dat"))
+    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "iris0"), "iris0-5-1tra.dat"))
+    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
+    #     defaultDataDir), "iris0"), "iris0-5-1tst.dat"))
     # endregion
 
     parser = argparse.ArgumentParser(
@@ -133,7 +139,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--training-files",
                         type=str,
-                        metavar=defaultTrainingFiles[0],
+                        metavar="<*.dat/*.arff>",
                         # default=defaultTrainingFiles,
                         nargs="+",
                         help="a file or files that are going to be used to train the classifier")
@@ -167,7 +173,7 @@ if __name__ == '__main__':
     parser.add_argument("--multivariate",
                         type=bool,
                         metavar="<True/False>",
-                        default=False,
+                        default=True,
                         help="states if multivariate variant is to be used")
 
     parser.add_argument("--tree-count",
