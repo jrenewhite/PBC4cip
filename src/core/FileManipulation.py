@@ -52,11 +52,14 @@ def ReadPatternsBinary(originalFile, outputDirectory, suffix=None):
 
     if os.path.exists(name):
         input_file = open(name, "rb")
+        dataset = pickle.load(input_file)
         patternCount = pickle.load(input_file)
         # Read the data
         for pattern in tqdm(range(patternCount), desc=f"Reading patterns from {name}", unit="pat", leave=False):
             try:
                 pattern_in = pickle.load(input_file)
+                pattern_in.Dataset = dataset
+                pattern_in.Model = dataset.Model
                 patterns.append(pattern_in)
             except EOFError:
                 break
@@ -68,7 +71,7 @@ def ReadPatternsBinary(originalFile, outputDirectory, suffix=None):
         #         break
     else:
         raise Exception(
-            f"File '{name}'' not found! Please extract patterns first!")
+            f"File '{name}' not found! Please extract patterns first!")
     return patterns
 
 
@@ -91,10 +94,17 @@ def WritePatternsBinary(patterns, originalFile, outputDirectory, suffix=None):
         os.remove(name)
 
     patterns_out = open(name, "wb")
-    pickle.dump(len(patterns), patterns_out)
-    for pattern in tqdm(patterns, desc=f"{action} patterns to {name}...", unit="pattern", leave=False):
-        pickle.dump(pattern, patterns_out)
-        patterns_out.flush()
+
+    if len(patterns) > 0:
+        dataset = patterns[0].Dataset
+        pickle.dump(dataset, patterns_out)
+        pickle.dump(len(patterns), patterns_out)
+        for pattern in tqdm(patterns, desc=f"{action} patterns to {name}...", unit="pattern", leave=False):
+            pattern.Dataset = None
+            pattern.Model = None
+            pickle.dump(pattern, patterns_out)
+            patterns_out.flush()
+
     patterns_out.close()
 
     return name

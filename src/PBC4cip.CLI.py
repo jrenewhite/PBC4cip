@@ -32,16 +32,21 @@ def GetFilesFromDirectory(directory):
 def Train(file, outputDirectory, treeCount, multivariate, suffix=None):
     classifier = PBC4cip(file)
     patterns = classifier.Training(multivariate, treeCount)
-    WritePatternsBinary(patterns, file, outputDirectory, suffix)
     WritePatternsCSV(patterns, file, outputDirectory, suffix)
+    WritePatternsBinary(patterns, file, outputDirectory, suffix)
+
 
 
 def Classify(file, outputDirectory, resultsId, suffix=None):
-    classifier = PBC4cip(file)
-    patterns = ReadPatternsBinary(file, outputDirectory, suffix)
-    evaluation = classifier.Classification(patterns)
-    WriteClassificationResults(evaluation, file, outputDirectory, suffix)
-    WriteResultsCSV(evaluation, file, outputDirectory, resultsId)
+
+    try:
+        classifier = PBC4cip(file)
+        patterns = ReadPatternsBinary(file, outputDirectory, suffix)
+        evaluation = classifier.Classification(patterns)
+        WriteClassificationResults(evaluation, file, outputDirectory, suffix)
+        WriteResultsCSV(evaluation, file, outputDirectory, resultsId)
+    except Exception as e:
+        print(e)
 
 
 def Execute(args):
@@ -105,7 +110,7 @@ def Execute(args):
 if __name__ == '__main__':
 
     defaultDataDir = os.path.join(os.path.normpath(
-        os.path.join(os.getcwd(), os.pardir)), "data","python")
+        os.path.join(os.getcwd(), os.pardir)), "data", "python")
     defaultOutputDir = os.path.join(os.path.normpath(
         os.path.join(os.getcwd(), os.pardir)), "output")
 
@@ -114,8 +119,12 @@ if __name__ == '__main__':
 
     # Some samples to test the program (they are already in the data folder)
     # region Default files
-    #winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tra.dat
+    # winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tra.dat
     # C:\Users\jrenewhite\source\repos\PBC4cip\dataMulti\B\abalone-17_vs_7-8-9-10\abalone-17_vs_7-8-9-10-5-1tra.dat
+    defaultTrainingFiles.append(os.path.join(os.path.normpath(
+        defaultDataDir), "winequality-white-3_vs_7tra.dat"))
+    defaultTestingFiles.append(os.path.join(os.path.normpath(
+        defaultDataDir), "winequality-white-3_vs_7tst.dat"))
     # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
     #     defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tra.dat"))
     # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
@@ -160,7 +169,7 @@ if __name__ == '__main__':
     parser.add_argument("--input-directory",
                         type=str,
                         metavar="'"+defaultDataDir+"'",
-                        # default=defaultDataDir,
+                        default=defaultDataDir,
                         help="the directory with files to be classified")
 
     parser.add_argument("--output-directory",
@@ -173,7 +182,7 @@ if __name__ == '__main__':
     parser.add_argument("--multivariate",
                         type=bool,
                         metavar="<True/False>",
-                        default=True,
+                        default=False,
                         help="states if multivariate variant is to be used")
 
     parser.add_argument("--tree-count",

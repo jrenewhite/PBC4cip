@@ -1,0 +1,1045 @@
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-1tra.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-1tst.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-2tra.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-2tst.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-3tra.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-3tst.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-4tra.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-4tst.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-5tra.dat:                 ASCII text
+abalone-17_vs_7-8-9-10/abalone-17_vs_7-8-9-10-5-5tst.dat:                 ASCII text
+abalone19/abalone19-5-1tra.dat:                                           ASCII text
+abalone19/abalone19-5-1tst.dat:                                           ASCII text
+abalone19/abalone19-5-2tra.dat:                                           ASCII text
+abalone19/abalone19-5-2tst.dat:                                           ASCII text
+abalone19/abalone19-5-3tra.dat:                                           ASCII text
+abalone19/abalone19-5-3tst.dat:                                           ASCII text
+abalone19/abalone19-5-4tra.dat:                                           ASCII text
+abalone19/abalone19-5-4tst.dat:                                           ASCII text
+abalone19/abalone19-5-5tra.dat:                                           ASCII text
+abalone19/abalone19-5-5tst.dat:                                           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-1tra.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-1tst.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-2tra.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-2tst.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-3tra.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-3tst.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-4tra.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-4tst.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-5tra.dat:           ASCII text
+abalone-19_vs_10-11-12-13/abalone-19_vs_10-11-12-13-5-5tst.dat:           ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-1tra.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-1tst.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-2tra.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-2tst.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-3tra.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-3tst.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-4tra.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-4tst.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-5tra.dat:                     ASCII text
+abalone-20_vs_8-9-10/abalone-20_vs_8-9-10-5-5tst.dat:                     ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-1tra.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-1tst.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-2tra.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-2tst.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-3tra.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-3tst.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-4tra.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-4tst.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-5tra.dat:                               ASCII text
+abalone-21_vs_8/abalone-21_vs_8-5-5tst.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-1tra.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-1tst.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-2tra.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-2tst.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-3tra.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-3tst.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-4tra.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-4tst.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-5tra.dat:                               ASCII text
+abalone-3_vs_11/abalone-3_vs_11-5-5tst.dat:                               ASCII text
+abalone9-18/abalone9-18-5-1tra.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-1tst.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-2tra.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-2tst.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-3tra.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-3tst.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-4tra.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-4tst.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-5tra.dat:                                       ASCII text
+abalone9-18/abalone9-18-5-5tst.dat:                                       ASCII text
+car-good/car-good-5-1tra.dat:                                             ASCII text
+car-good/car-good-5-1tst.dat:                                             ASCII text
+car-good/car-good-5-2tra.dat:                                             ASCII text
+car-good/car-good-5-2tst.dat:                                             ASCII text
+car-good/car-good-5-3tra.dat:                                             ASCII text
+car-good/car-good-5-3tst.dat:                                             ASCII text
+car-good/car-good-5-4tra.dat:                                             ASCII text
+car-good/car-good-5-4tst.dat:                                             ASCII text
+car-good/car-good-5-5tra.dat:                                             ASCII text
+car-good/car-good-5-5tst.dat:                                             ASCII text
+car-vgood/car-vgood-5-1tra.dat:                                           ASCII text
+car-vgood/car-vgood-5-1tst.dat:                                           ASCII text
+car-vgood/car-vgood-5-2tra.dat:                                           ASCII text
+car-vgood/car-vgood-5-2tst.dat:                                           ASCII text
+car-vgood/car-vgood-5-3tra.dat:                                           ASCII text
+car-vgood/car-vgood-5-3tst.dat:                                           ASCII text
+car-vgood/car-vgood-5-4tra.dat:                                           ASCII text
+car-vgood/car-vgood-5-4tst.dat:                                           ASCII text
+car-vgood/car-vgood-5-5tra.dat:                                           ASCII text
+car-vgood/car-vgood-5-5tst.dat:                                           ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-1tra.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-1tst.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-2tra.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-2tst.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-3tra.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-3tst.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-4tra.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-4tst.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-5tra.dat:                             ASCII text
+cleveland-0_vs_4/cleveland-0_vs_4-5-5tst.dat:                             ASCII text
+dermatology-6/dermatology-6-5-1tra.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-1tst.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-2tra.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-2tst.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-3tra.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-3tst.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-4tra.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-4tst.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-5tra.dat:                                   ASCII text, with very long lines
+dermatology-6/dermatology-6-5-5tst.dat:                                   ASCII text, with very long lines
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-1tra.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-1tst.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-2tra.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-2tst.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-3tra.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-3tst.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-4tra.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-4tst.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-5tra.dat:                     ASCII text
+ecoli-0-1-3-7_vs_2-6/ecoli-0-1-3-7_vs_2-6-5-5tst.dat:                     ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-1tra.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-1tst.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-2tra.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-2tst.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-3tra.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-3tst.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-4tra.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-4tst.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-5tra.dat:                         ASCII text
+ecoli-0-1-4-6_vs_5/ecoli-0-1-4-6_vs_5-5-5tst.dat:                         ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-1tra.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-1tst.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-2tra.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-2tst.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-3tra.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-3tst.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-4tra.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-4tst.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-5tra.dat:             ASCII text
+ecoli-0-1-4-7_vs_2-3-5-6/ecoli-0-1-4-7_vs_2-3-5-6-5-5tst.dat:             ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-1tra.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-1tst.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-2tra.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-2tst.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-3tra.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-3tst.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-4tra.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-4tst.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-5tra.dat:                     ASCII text
+ecoli-0-1-4-7_vs_5-6/ecoli-0-1-4-7_vs_5-6-5-5tst.dat:                     ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-1tra.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-1tst.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-2tra.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-2tst.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-3tra.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-3tst.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-4tra.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-4tst.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-5tra.dat:                         ASCII text
+ecoli-0-1_vs_2-3-5/ecoli-0-1_vs_2-3-5-5-5tst.dat:                         ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-1tra.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-1tst.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-2tra.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-2tst.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-3tra.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-3tst.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-4tra.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-4tst.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-5tra.dat:                                 ASCII text
+ecoli-0-1_vs_5/ecoli-0-1_vs_5-5-5tst.dat:                                 ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-1tra.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-1tst.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-2tra.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-2tst.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-3tra.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-3tst.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-4tra.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-4tst.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-5tra.dat:                         ASCII text
+ecoli-0-2-3-4_vs_5/ecoli-0-2-3-4_vs_5-5-5tst.dat:                         ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-1tra.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-1tst.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-2tra.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-2tst.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-3tra.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-3tst.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-4tra.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-4tst.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-5tra.dat:                     ASCII text
+ecoli-0-2-6-7_vs_3-5/ecoli-0-2-6-7_vs_3-5-5-5tst.dat:                     ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-1tra.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-1tst.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-2tra.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-2tst.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-3tra.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-3tst.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-4tra.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-4tst.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-5tra.dat:                         ASCII text
+ecoli-0-3-4-6_vs_5/ecoli-0-3-4-6_vs_5-5-5tst.dat:                         ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-1tra.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-1tst.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-2tra.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-2tst.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-3tra.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-3tst.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-4tra.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-4tst.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-5tra.dat:                     ASCII text
+ecoli-0-3-4-7_vs_5-6/ecoli-0-3-4-7_vs_5-6-5-5tst.dat:                     ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-1tra.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-1tst.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-2tra.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-2tst.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-3tra.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-3tst.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-4tra.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-4tst.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-5tra.dat:                             ASCII text
+ecoli-0-3-4_vs_5/ecoli-0-3-4_vs_5-5-5tst.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-1tra.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-1tst.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-2tra.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-2tst.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-3tra.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-3tst.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-4tra.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-4tst.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-5tra.dat:                             ASCII text
+ecoli-0-4-6_vs_5/ecoli-0-4-6_vs_5-5-5tst.dat:                             ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-1tra.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-1tst.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-2tra.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-2tst.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-3tra.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-3tst.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-4tra.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-4tst.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-5tra.dat:                         ASCII text
+ecoli-0-6-7_vs_3-5/ecoli-0-6-7_vs_3-5-5-5tst.dat:                         ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-1tra.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-1tst.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-2tra.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-2tst.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-3tra.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-3tst.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-4tra.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-4tst.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-5tra.dat:                             ASCII text
+ecoli-0-6-7_vs_5/ecoli-0-6-7_vs_5-5-5tst.dat:                             ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-1tra.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-1tst.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-2tra.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-2tst.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-3tra.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-3tst.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-4tra.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-4tst.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-5tra.dat:                                     ASCII text
+ecoli-0_vs_1/ecoli-0_vs_1-5-5tst.dat:                                     ASCII text
+ecoli1/ecoli1-5-1tra.dat:                                                 ASCII text
+ecoli1/ecoli1-5-1tst.dat:                                                 ASCII text
+ecoli1/ecoli1-5-2tra.dat:                                                 ASCII text
+ecoli1/ecoli1-5-2tst.dat:                                                 ASCII text
+ecoli1/ecoli1-5-3tra.dat:                                                 ASCII text
+ecoli1/ecoli1-5-3tst.dat:                                                 ASCII text
+ecoli1/ecoli1-5-4tra.dat:                                                 ASCII text
+ecoli1/ecoli1-5-4tst.dat:                                                 ASCII text
+ecoli1/ecoli1-5-5tra.dat:                                                 ASCII text
+ecoli1/ecoli1-5-5tst.dat:                                                 ASCII text
+ecoli2/ecoli2-5-1tra.dat:                                                 ASCII text
+ecoli2/ecoli2-5-1tst.dat:                                                 ASCII text
+ecoli2/ecoli2-5-2tra.dat:                                                 ASCII text
+ecoli2/ecoli2-5-2tst.dat:                                                 ASCII text
+ecoli2/ecoli2-5-3tra.dat:                                                 ASCII text
+ecoli2/ecoli2-5-3tst.dat:                                                 ASCII text
+ecoli2/ecoli2-5-4tra.dat:                                                 ASCII text
+ecoli2/ecoli2-5-4tst.dat:                                                 ASCII text
+ecoli2/ecoli2-5-5tra.dat:                                                 ASCII text
+ecoli2/ecoli2-5-5tst.dat:                                                 ASCII text
+ecoli3/ecoli3-5-1tra.dat:                                                 ASCII text
+ecoli3/ecoli3-5-1tst.dat:                                                 ASCII text
+ecoli3/ecoli3-5-2tra.dat:                                                 ASCII text
+ecoli3/ecoli3-5-2tst.dat:                                                 ASCII text
+ecoli3/ecoli3-5-3tra.dat:                                                 ASCII text
+ecoli3/ecoli3-5-3tst.dat:                                                 ASCII text
+ecoli3/ecoli3-5-4tra.dat:                                                 ASCII text
+ecoli3/ecoli3-5-4tst.dat:                                                 ASCII text
+ecoli3/ecoli3-5-5tra.dat:                                                 ASCII text
+ecoli3/ecoli3-5-5tst.dat:                                                 ASCII text
+ecoli4/ecoli4-5-1tra.dat:                                                 ASCII text
+ecoli4/ecoli4-5-1tst.dat:                                                 ASCII text
+ecoli4/ecoli4-5-2tra.dat:                                                 ASCII text
+ecoli4/ecoli4-5-2tst.dat:                                                 ASCII text
+ecoli4/ecoli4-5-3tra.dat:                                                 ASCII text
+ecoli4/ecoli4-5-3tst.dat:                                                 ASCII text
+ecoli4/ecoli4-5-4tra.dat:                                                 ASCII text
+ecoli4/ecoli4-5-4tst.dat:                                                 ASCII text
+ecoli4/ecoli4-5-5tra.dat:                                                 ASCII text
+ecoli4/ecoli4-5-5tst.dat:                                                 ASCII text
+flare-F/flare-F-5-1tra.dat:                                               ASCII text
+flare-F/flare-F-5-1tst.dat:                                               ASCII text
+flare-F/flare-F-5-2tra.dat:                                               ASCII text
+flare-F/flare-F-5-2tst.dat:                                               ASCII text
+flare-F/flare-F-5-3tra.dat:                                               ASCII text
+flare-F/flare-F-5-3tst.dat:                                               ASCII text
+flare-F/flare-F-5-4tra.dat:                                               ASCII text
+flare-F/flare-F-5-4tst.dat:                                               ASCII text
+flare-F/flare-F-5-5tra.dat:                                               ASCII text
+flare-F/flare-F-5-5tst.dat:                                               ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-1tra.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-1tst.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-2tra.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-2tst.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-3tra.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-3tst.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-4tra.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-4tst.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-5tra.dat:                 ASCII text
+glass-0-1-2-3_vs_4-5-6/glass-0-1-2-3_vs_4-5-6-5-5tst.dat:                 ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-1tra.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-1tst.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-2tra.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-2tst.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-3tra.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-3tst.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-4tra.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-4tst.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-5tra.dat:                         ASCII text
+glass-0-1-4-6_vs_2/glass-0-1-4-6_vs_2-5-5tst.dat:                         ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-1tra.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-1tst.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-2tra.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-2tst.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-3tra.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-3tst.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-4tra.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-4tst.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-5tra.dat:                             ASCII text
+glass-0-1-5_vs_2/glass-0-1-5_vs_2-5-5tst.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-1tra.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-1tst.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-2tra.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-2tst.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-3tra.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-3tst.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-4tra.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-4tst.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-5tra.dat:                             ASCII text
+glass-0-1-6_vs_2/glass-0-1-6_vs_2-5-5tst.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-1tra.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-1tst.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-2tra.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-2tst.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-3tra.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-3tst.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-4tra.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-4tst.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-5tra.dat:                             ASCII text
+glass-0-1-6_vs_5/glass-0-1-6_vs_5-5-5tst.dat:                             ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-1tra.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-1tst.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-2tra.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-2tst.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-3tra.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-3tst.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-4tra.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-4tst.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-5tra.dat:                                 ASCII text
+glass-0-4_vs_5/glass-0-4_vs_5-5-5tst.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-1tra.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-1tst.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-2tra.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-2tst.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-3tra.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-3tst.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-4tra.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-4tst.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-5tra.dat:                                 ASCII text
+glass-0-6_vs_5/glass-0-6_vs_5-5-5tst.dat:                                 ASCII text
+glass0/glass0-5-1tra.dat:                                                 ASCII text
+glass0/glass0-5-1tst.dat:                                                 ASCII text
+glass0/glass0-5-2tra.dat:                                                 ASCII text
+glass0/glass0-5-2tst.dat:                                                 ASCII text
+glass0/glass0-5-3tra.dat:                                                 ASCII text
+glass0/glass0-5-3tst.dat:                                                 ASCII text
+glass0/glass0-5-4tra.dat:                                                 ASCII text
+glass0/glass0-5-4tst.dat:                                                 ASCII text
+glass0/glass0-5-5tra.dat:                                                 ASCII text
+glass0/glass0-5-5tst.dat:                                                 ASCII text
+glass1/glass1-5-1tra.dat:                                                 ASCII text
+glass1/glass1-5-1tst.dat:                                                 ASCII text
+glass1/glass1-5-2tra.dat:                                                 ASCII text
+glass1/glass1-5-2tst.dat:                                                 ASCII text
+glass1/glass1-5-3tra.dat:                                                 ASCII text
+glass1/glass1-5-3tst.dat:                                                 ASCII text
+glass1/glass1-5-4tra.dat:                                                 ASCII text
+glass1/glass1-5-4tst.dat:                                                 ASCII text
+glass1/glass1-5-5tra.dat:                                                 ASCII text
+glass1/glass1-5-5tst.dat:                                                 ASCII text
+glass2/glass2-5-1tra.dat:                                                 ASCII text
+glass2/glass2-5-1tst.dat:                                                 ASCII text
+glass2/glass2-5-2tra.dat:                                                 ASCII text
+glass2/glass2-5-2tst.dat:                                                 ASCII text
+glass2/glass2-5-3tra.dat:                                                 ASCII text
+glass2/glass2-5-3tst.dat:                                                 ASCII text
+glass2/glass2-5-4tra.dat:                                                 ASCII text
+glass2/glass2-5-4tst.dat:                                                 ASCII text
+glass2/glass2-5-5tra.dat:                                                 ASCII text
+glass2/glass2-5-5tst.dat:                                                 ASCII text
+glass4/glass4-5-1tra.dat:                                                 ASCII text
+glass4/glass4-5-1tst.dat:                                                 ASCII text
+glass4/glass4-5-2tra.dat:                                                 ASCII text
+glass4/glass4-5-2tst.dat:                                                 ASCII text
+glass4/glass4-5-3tra.dat:                                                 ASCII text
+glass4/glass4-5-3tst.dat:                                                 ASCII text
+glass4/glass4-5-4tra.dat:                                                 ASCII text
+glass4/glass4-5-4tst.dat:                                                 ASCII text
+glass4/glass4-5-5tra.dat:                                                 ASCII text
+glass4/glass4-5-5tst.dat:                                                 ASCII text
+glass5/glass5-5-1tra.dat:                                                 ASCII text
+glass5/glass5-5-1tst.dat:                                                 ASCII text
+glass5/glass5-5-2tra.dat:                                                 ASCII text
+glass5/glass5-5-2tst.dat:                                                 ASCII text
+glass5/glass5-5-3tra.dat:                                                 ASCII text
+glass5/glass5-5-3tst.dat:                                                 ASCII text
+glass5/glass5-5-4tra.dat:                                                 ASCII text
+glass5/glass5-5-4tst.dat:                                                 ASCII text
+glass5/glass5-5-5tra.dat:                                                 ASCII text
+glass5/glass5-5-5tst.dat:                                                 ASCII text
+glass6/glass6-5-1tra.dat:                                                 ASCII text
+glass6/glass6-5-1tst.dat:                                                 ASCII text
+glass6/glass6-5-2tra.dat:                                                 ASCII text
+glass6/glass6-5-2tst.dat:                                                 ASCII text
+glass6/glass6-5-3tra.dat:                                                 ASCII text
+glass6/glass6-5-3tst.dat:                                                 ASCII text
+glass6/glass6-5-4tra.dat:                                                 ASCII text
+glass6/glass6-5-4tst.dat:                                                 ASCII text
+glass6/glass6-5-5tra.dat:                                                 ASCII text
+glass6/glass6-5-5tst.dat:                                                 ASCII text
+habermanImb/habermanImb-5-1tra.dat:                                       ASCII text
+habermanImb/habermanImb-5-1tst.dat:                                       ASCII text
+habermanImb/habermanImb-5-2tra.dat:                                       ASCII text
+habermanImb/habermanImb-5-2tst.dat:                                       ASCII text
+habermanImb/habermanImb-5-3tra.dat:                                       ASCII text
+habermanImb/habermanImb-5-3tst.dat:                                       ASCII text
+habermanImb/habermanImb-5-4tra.dat:                                       ASCII text
+habermanImb/habermanImb-5-4tst.dat:                                       ASCII text
+habermanImb/habermanImb-5-5tra.dat:                                       ASCII text
+habermanImb/habermanImb-5-5tst.dat:                                       ASCII text
+iris0/iris0-5-1tra.dat:                                                   ASCII text
+iris0/iris0-5-1tst.dat:                                                   ASCII text
+iris0/iris0-5-2tra.dat:                                                   ASCII text
+iris0/iris0-5-2tst.dat:                                                   ASCII text
+iris0/iris0-5-3tra.dat:                                                   ASCII text
+iris0/iris0-5-3tst.dat:                                                   ASCII text
+iris0/iris0-5-4tra.dat:                                                   ASCII text
+iris0/iris0-5-4tst.dat:                                                   ASCII text
+iris0/iris0-5-5tra.dat:                                                   ASCII text
+iris0/iris0-5-5tst.dat:                                                   ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-1tra.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-1tst.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-2tra.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-2tst.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-3tra.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-3tst.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-4tra.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-4tst.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-5tra.dat:                 ASCII text
+kr-vs-k-one_vs_fifteen/kr-vs-k-one_vs_fifteen-5-5tst.dat:                 ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-1tra.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-1tst.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-2tra.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-2tst.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-3tra.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-3tst.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-4tra.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-4tst.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-5tra.dat:               ASCII text
+kr-vs-k-three_vs_eleven/kr-vs-k-three_vs_eleven-5-5tst.dat:               ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-1tra.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-1tst.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-2tra.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-2tst.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-3tra.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-3tst.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-4tra.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-4tst.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-5tra.dat:             ASCII text
+kr-vs-k-zero-one_vs_draw/kr-vs-k-zero-one_vs_draw-5-5tst.dat:             ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-1tra.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-1tst.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-2tra.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-2tst.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-3tra.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-3tst.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-4tra.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-4tst.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-5tra.dat:                   ASCII text
+kr-vs-k-zero_vs_eight/kr-vs-k-zero_vs_eight-5-5tst.dat:                   ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-1tra.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-1tst.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-2tra.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-2tst.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-3tra.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-3tst.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-4tra.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-4tst.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-5tra.dat:               ASCII text
+kr-vs-k-zero_vs_fifteen/kr-vs-k-zero_vs_fifteen-5-5tst.dat:               ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-1tra.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-1tst.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-2tra.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-2tst.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-3tra.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-3tst.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-4tra.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-4tst.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-5tra.dat: ASCII text
+led7digit-0-2-4-5-6-7-8-9_vs_1/led7digit-0-2-4-5-6-7-8-9_vs_1-5-5tst.dat: ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-1tra.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-1tst.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-2tra.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-2tst.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-3tra.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-3tst.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-4tra.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-4tst.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-5tra.dat:     ASCII text
+lymphography-normal-fibrosis/lymphography-normal-fibrosis-5-5tst.dat:     ASCII text
+new-thyroid1/new-thyroid1-5-1tra.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-1tst.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-2tra.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-2tst.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-3tra.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-3tst.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-4tra.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-4tst.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-5tra.dat:                                     ASCII text
+new-thyroid1/new-thyroid1-5-5tst.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-1tra.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-1tst.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-2tra.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-2tst.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-3tra.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-3tst.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-4tra.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-4tst.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-5tra.dat:                                     ASCII text
+new-thyroid2/new-thyroid2-5-5tst.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-1tra.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-1tst.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-2tra.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-2tst.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-3tra.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-3tst.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-4tra.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-4tst.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-5tra.dat:                                     ASCII text
+page-blocks0/page-blocks0-5-5tst.dat:                                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-1tra.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-1tst.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-2tra.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-2tst.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-3tra.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-3tst.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-4tra.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-4tst.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-5tra.dat:                     ASCII text
+page-blocks-1-3_vs_4/page-blocks-1-3_vs_4-5-5tst.dat:                     ASCII text
+pimaImb/pimaImb-5-1tra.dat:                                               ASCII text
+pimaImb/pimaImb-5-1tst.dat:                                               ASCII text
+pimaImb/pimaImb-5-2tra.dat:                                               ASCII text
+pimaImb/pimaImb-5-2tst.dat:                                               ASCII text
+pimaImb/pimaImb-5-3tra.dat:                                               ASCII text
+pimaImb/pimaImb-5-3tst.dat:                                               ASCII text
+pimaImb/pimaImb-5-4tra.dat:                                               ASCII text
+pimaImb/pimaImb-5-4tst.dat:                                               ASCII text
+pimaImb/pimaImb-5-5tra.dat:                                               ASCII text
+pimaImb/pimaImb-5-5tst.dat:                                               ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-1tra.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-1tst.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-2tra.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-2tst.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-3tra.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-3tst.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-4tra.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-4tst.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-5tra.dat:                                 ASCII text
+poker-8-9_vs_5/poker-8-9_vs_5-5-5tst.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-1tra.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-1tst.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-2tra.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-2tst.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-3tra.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-3tst.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-4tra.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-4tst.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-5tra.dat:                                 ASCII text
+poker-8-9_vs_6/poker-8-9_vs_6-5-5tst.dat:                                 ASCII text
+poker-8_vs_6/poker-8_vs_6-5-1tra.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-1tst.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-2tra.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-2tst.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-3tra.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-3tst.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-4tra.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-4tst.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-5tra.dat:                                     ASCII text
+poker-8_vs_6/poker-8_vs_6-5-5tst.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-1tra.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-1tst.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-2tra.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-2tst.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-3tra.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-3tst.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-4tra.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-4tst.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-5tra.dat:                                     ASCII text
+poker-9_vs_7/poker-9_vs_7-5-5tst.dat:                                     ASCII text
+segment0/segment0-5-1tra.dat:                                             ASCII text
+segment0/segment0-5-1tst.dat:                                             ASCII text
+segment0/segment0-5-2tra.dat:                                             ASCII text
+segment0/segment0-5-2tst.dat:                                             ASCII text
+segment0/segment0-5-3tra.dat:                                             ASCII text
+segment0/segment0-5-3tst.dat:                                             ASCII text
+segment0/segment0-5-4tra.dat:                                             ASCII text
+segment0/segment0-5-4tst.dat:                                             ASCII text
+segment0/segment0-5-5tra.dat:                                             ASCII text
+segment0/segment0-5-5tst.dat:                                             ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-1tra.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-1tst.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-2tra.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-2tst.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-3tra.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-3tst.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-4tra.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-4tst.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-5tra.dat:                                 ASCII text
+shuttle-2_vs_5/shuttle-2_vs_5-5-5tst.dat:                                 ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-1tra.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-1tst.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-2tra.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-2tst.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-3tra.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-3tst.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-4tra.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-4tst.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-5tra.dat:                             ASCII text
+shuttle-6_vs_2-3/shuttle-6_vs_2-3-5-5tst.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-1tra.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-1tst.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-2tra.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-2tst.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-3tra.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-3tst.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-4tra.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-4tst.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-5tra.dat:                             ASCII text
+shuttle-c0-vs-c4/shuttle-c0-vs-c4-5-5tst.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-1tra.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-1tst.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-2tra.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-2tst.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-3tra.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-3tst.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-4tra.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-4tst.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-5tra.dat:                             ASCII text
+shuttle-c2-vs-c4/shuttle-c2-vs-c4-5-5tst.dat:                             ASCII text
+vehicle0/vehicle0-5-1tra.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-1tst.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-2tra.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-2tst.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-3tra.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-3tst.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-4tra.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-4tst.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-5tra.dat:                                             ASCII text, with very long lines
+vehicle0/vehicle0-5-5tst.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-1tra.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-1tst.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-2tra.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-2tst.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-3tra.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-3tst.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-4tra.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-4tst.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-5tra.dat:                                             ASCII text, with very long lines
+vehicle1/vehicle1-5-5tst.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-1tra.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-1tst.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-2tra.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-2tst.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-3tra.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-3tst.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-4tra.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-4tst.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-5tra.dat:                                             ASCII text, with very long lines
+vehicle2/vehicle2-5-5tst.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-1tra.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-1tst.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-2tra.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-2tst.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-3tra.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-3tst.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-4tra.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-4tst.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-5tra.dat:                                             ASCII text, with very long lines
+vehicle3/vehicle3-5-5tst.dat:                                             ASCII text, with very long lines
+vowel0/vowel0-5-1tra.dat:                                                 ASCII text
+vowel0/vowel0-5-1tst.dat:                                                 ASCII text
+vowel0/vowel0-5-2tra.dat:                                                 ASCII text
+vowel0/vowel0-5-2tst.dat:                                                 ASCII text
+vowel0/vowel0-5-3tra.dat:                                                 ASCII text
+vowel0/vowel0-5-3tst.dat:                                                 ASCII text
+vowel0/vowel0-5-4tra.dat:                                                 ASCII text
+vowel0/vowel0-5-4tst.dat:                                                 ASCII text
+vowel0/vowel0-5-5tra.dat:                                                 ASCII text
+vowel0/vowel0-5-5tst.dat:                                                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-1tra.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-1tst.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tra.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tst.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-3tra.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-3tst.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-4tra.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-4tst.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-5tra.dat:                 ASCII text
+winequality-red-3_vs_5/winequality-red-3_vs_5-5-5tst.dat:                 ASCII text
+winequality-red-4/winequality-red-4-5-1tra.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-1tst.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-2tra.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-2tst.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-3tra.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-3tst.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-4tra.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-4tst.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-5tra.dat:                           ASCII text
+winequality-red-4/winequality-red-4-5-5tst.dat:                           ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-1tra.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-1tst.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-2tra.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-2tst.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-3tra.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-3tst.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-4tra.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-4tst.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-5tra.dat:             ASCII text
+winequality-red-8_vs_6-7/winequality-red-8_vs_6-7-5-5tst.dat:             ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-1tra.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-1tst.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-2tra.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-2tst.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-3tra.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-3tst.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-4tra.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-4tst.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-5tra.dat:                 ASCII text
+winequality-red-8_vs_6/winequality-red-8_vs_6-5-5tst.dat:                 ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-1tra.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-1tst.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-2tra.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-2tst.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-3tra.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-3tst.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-4tra.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-4tst.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-5tra.dat:         ASCII text
+winequality-white-3-9_vs_5/winequality-white-3-9_vs_5-5-5tst.dat:         ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-1tra.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-1tst.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-2tra.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-2tst.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-3tra.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-3tst.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-4tra.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-4tst.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-5tra.dat:             ASCII text
+winequality-white-3_vs_7/winequality-white-3_vs_7-5-5tst.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-1tra.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-1tst.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-2tra.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-2tst.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-3tra.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-3tst.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-4tra.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-4tst.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-5tra.dat:             ASCII text
+winequality-white-9_vs_4/winequality-white-9_vs_4-5-5tst.dat:             ASCII text
+wisconsinImb/wisconsinImb-5-1tra.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-1tst.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-2tra.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-2tst.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-3tra.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-3tst.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-4tra.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-4tst.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-5tra.dat:                                     ASCII text
+wisconsinImb/wisconsinImb-5-5tst.dat:                                     ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-1tra.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-1tst.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-2tra.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-2tst.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-3tra.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-3tst.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-4tra.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-4tst.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-5tra.dat:             ASCII text
+yeast-0-2-5-6_vs_3-7-8-9/yeast-0-2-5-6_vs_3-7-8-9-5-5tst.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-1tra.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-1tst.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-2tra.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-2tst.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-3tra.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-3tst.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-4tra.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-4tst.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-5tra.dat:             ASCII text
+yeast-0-2-5-7-9_vs_3-6-8/yeast-0-2-5-7-9_vs_3-6-8-5-5tst.dat:             ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-1tra.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-1tst.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-2tra.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-2tst.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-3tra.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-3tst.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-4tra.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-4tst.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-5tra.dat:                     ASCII text
+yeast-0-3-5-9_vs_7-8/yeast-0-3-5-9_vs_7-8-5-5tst.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-1tra.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-1tst.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-2tra.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-2tst.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-3tra.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-3tst.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-4tra.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-4tst.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-5tra.dat:                     ASCII text
+yeast-0-5-6-7-9_vs_4/yeast-0-5-6-7-9_vs_4-5-5tst.dat:                     ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-1tra.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-1tst.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-2tra.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-2tst.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-3tra.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-3tst.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-4tra.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-4tst.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-5tra.dat:                         ASCII text
+yeast-1-2-8-9_vs_7/yeast-1-2-8-9_vs_7-5-5tst.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-1tra.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-1tst.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-2tra.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-2tst.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-3tra.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-3tst.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-4tra.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-4tst.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-5tra.dat:                         ASCII text
+yeast-1-4-5-8_vs_7/yeast-1-4-5-8_vs_7-5-5tst.dat:                         ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-1tra.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-1tst.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-2tra.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-2tst.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-3tra.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-3tst.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-4tra.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-4tst.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-5tra.dat:                                     ASCII text
+yeast-1_vs_7/yeast-1_vs_7-5-5tst.dat:                                     ASCII text
+yeast1/yeast1-5-1tra.dat:                                                 ASCII text
+yeast1/yeast1-5-1tst.dat:                                                 ASCII text
+yeast1/yeast1-5-2tra.dat:                                                 ASCII text
+yeast1/yeast1-5-2tst.dat:                                                 ASCII text
+yeast1/yeast1-5-3tra.dat:                                                 ASCII text
+yeast1/yeast1-5-3tst.dat:                                                 ASCII text
+yeast1/yeast1-5-4tra.dat:                                                 ASCII text
+yeast1/yeast1-5-4tst.dat:                                                 ASCII text
+yeast1/yeast1-5-5tra.dat:                                                 ASCII text
+yeast1/yeast1-5-5tst.dat:                                                 ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-1tra.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-1tst.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-2tra.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-2tst.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-3tra.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-3tst.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-4tra.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-4tst.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-5tra.dat:                                     ASCII text
+yeast-2_vs_4/yeast-2_vs_4-5-5tst.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-1tra.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-1tst.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-2tra.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-2tst.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-3tra.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-3tst.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-4tra.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-4tst.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-5tra.dat:                                     ASCII text
+yeast-2_vs_8/yeast-2_vs_8-5-5tst.dat:                                     ASCII text
+yeast3/yeast3-5-1tra.dat:                                                 ASCII text
+yeast3/yeast3-5-1tst.dat:                                                 ASCII text
+yeast3/yeast3-5-2tra.dat:                                                 ASCII text
+yeast3/yeast3-5-2tst.dat:                                                 ASCII text
+yeast3/yeast3-5-3tra.dat:                                                 ASCII text
+yeast3/yeast3-5-3tst.dat:                                                 ASCII text
+yeast3/yeast3-5-4tra.dat:                                                 ASCII text
+yeast3/yeast3-5-4tst.dat:                                                 ASCII text
+yeast3/yeast3-5-5tra.dat:                                                 ASCII text
+yeast3/yeast3-5-5tst.dat:                                                 ASCII text
+yeast4/yeast4-5-1tra.dat:                                                 ASCII text
+yeast4/yeast4-5-1tst.dat:                                                 ASCII text
+yeast4/yeast4-5-2tra.dat:                                                 ASCII text
+yeast4/yeast4-5-2tst.dat:                                                 ASCII text
+yeast4/yeast4-5-3tra.dat:                                                 ASCII text
+yeast4/yeast4-5-3tst.dat:                                                 ASCII text
+yeast4/yeast4-5-4tra.dat:                                                 ASCII text
+yeast4/yeast4-5-4tst.dat:                                                 ASCII text
+yeast4/yeast4-5-5tra.dat:                                                 ASCII text
+yeast4/yeast4-5-5tst.dat:                                                 ASCII text
+yeast5/yeast5-5-1tra.dat:                                                 ASCII text
+yeast5/yeast5-5-1tst.dat:                                                 ASCII text
+yeast5/yeast5-5-2tra.dat:                                                 ASCII text
+yeast5/yeast5-5-2tst.dat:                                                 ASCII text
+yeast5/yeast5-5-3tra.dat:                                                 ASCII text
+yeast5/yeast5-5-3tst.dat:                                                 ASCII text
+yeast5/yeast5-5-4tra.dat:                                                 ASCII text
+yeast5/yeast5-5-4tst.dat:                                                 ASCII text
+yeast5/yeast5-5-5tra.dat:                                                 ASCII text
+yeast5/yeast5-5-5tst.dat:                                                 ASCII text
+yeast6/yeast6-5-1tra.dat:                                                 ASCII text
+yeast6/yeast6-5-1tst.dat:                                                 ASCII text
+yeast6/yeast6-5-2tra.dat:                                                 ASCII text
+yeast6/yeast6-5-2tst.dat:                                                 ASCII text
+yeast6/yeast6-5-3tra.dat:                                                 ASCII text
+yeast6/yeast6-5-3tst.dat:                                                 ASCII text
+yeast6/yeast6-5-4tra.dat:                                                 ASCII text
+yeast6/yeast6-5-4tst.dat:                                                 ASCII text
+yeast6/yeast6-5-5tra.dat:                                                 ASCII text
+yeast6/yeast6-5-5tst.dat:                                                 ASCII text
+zoo-3/zoo-3-5-1tra.dat:                                                   ASCII text
+zoo-3/zoo-3-5-1tst.dat:                                                   ASCII text
+zoo-3/zoo-3-5-2tra.dat:                                                   ASCII text
+zoo-3/zoo-3-5-2tst.dat:                                                   ASCII text
+zoo-3/zoo-3-5-3tra.dat:                                                   ASCII text
+zoo-3/zoo-3-5-3tst.dat:                                                   ASCII text
+zoo-3/zoo-3-5-4tra.dat:                                                   ASCII text
+zoo-3/zoo-3-5-4tst.dat:                                                   ASCII text
+zoo-3/zoo-3-5-5tra.dat:                                                   ASCII text
+zoo-3/zoo-3-5-5tst.dat:                                                   ASCII text
+abalone-17_vs_7-8-9-10:                                                   directory
+abalone19:                                                                directory
+abalone-19_vs_10-11-12-13:                                                directory
+abalone-20_vs_8-9-10:                                                     directory
+abalone-21_vs_8:                                                          directory
+abalone-3_vs_11:                                                          directory
+abalone9-18:                                                              directory
+car-good:                                                                 directory
+car-vgood:                                                                directory
+cleveland-0_vs_4:                                                         directory
+dermatology-6:                                                            directory
+ecoli-0-1-3-7_vs_2-6:                                                     directory
+ecoli-0-1-4-6_vs_5:                                                       directory
+ecoli-0-1-4-7_vs_2-3-5-6:                                                 directory
+ecoli-0-1-4-7_vs_5-6:                                                     directory
+ecoli-0-1_vs_2-3-5:                                                       directory
+ecoli-0-1_vs_5:                                                           directory
+ecoli-0-2-3-4_vs_5:                                                       directory
+ecoli-0-2-6-7_vs_3-5:                                                     directory
+ecoli-0-3-4-6_vs_5:                                                       directory
+ecoli-0-3-4-7_vs_5-6:                                                     directory
+ecoli-0-3-4_vs_5:                                                         directory
+ecoli-0-4-6_vs_5:                                                         directory
+ecoli-0-6-7_vs_3-5:                                                       directory
+ecoli-0-6-7_vs_5:                                                         directory
+ecoli-0_vs_1:                                                             directory
+ecoli1:                                                                   directory
+ecoli2:                                                                   directory
+ecoli3:                                                                   directory
+ecoli4:                                                                   directory
+flare-F:                                                                  directory
+glass0:                                                                   directory
+glass-0-1-2-3_vs_4-5-6:                                                   directory
+glass-0-1-4-6_vs_2:                                                       directory
+glass-0-1-5_vs_2:                                                         directory
+glass-0-1-6_vs_2:                                                         directory
+glass-0-1-6_vs_5:                                                         directory
+glass-0-4_vs_5:                                                           directory
+glass-0-6_vs_5:                                                           directory
+glass1:                                                                   directory
+glass2:                                                                   directory
+glass4:                                                                   directory
+glass5:                                                                   directory
+glass6:                                                                   directory
+habermanImb:                                                              directory
+iris0:                                                                    directory
+kr-vs-k-one_vs_fifteen:                                                   directory
+kr-vs-k-three_vs_eleven:                                                  directory
+kr-vs-k-zero-one_vs_draw:                                                 directory
+kr-vs-k-zero_vs_eight:                                                    directory
+kr-vs-k-zero_vs_fifteen:                                                  directory
+led7digit-0-2-4-5-6-7-8-9_vs_1:                                           directory
+lymphography-normal-fibrosis:                                             directory
+new-thyroid1:                                                             directory
+new-thyroid2:                                                             directory
+page-blocks0:                                                             directory
+page-blocks-1-3_vs_4:                                                     directory
+pimaImb:                                                                  directory
+poker-8-9_vs_5:                                                           directory
+poker-8-9_vs_6:                                                           directory
+poker-8_vs_6:                                                             directory
+poker-9_vs_7:                                                             directory
+segment0:                                                                 directory
+shuttle-2_vs_5:                                                           directory
+shuttle-6_vs_2-3:                                                         directory
+shuttle-c0-vs-c4:                                                         directory
+shuttle-c2-vs-c4:                                                         directory
+vehicle0:                                                                 directory
+vehicle1:                                                                 directory
+vehicle2:                                                                 directory
+vehicle3:                                                                 directory
+vowel0:                                                                   directory
+winequality-red-3_vs_5:                                                   directory
+winequality-red-4:                                                        directory
+winequality-red-8_vs_6:                                                   directory
+winequality-red-8_vs_6-7:                                                 directory
+winequality-white-3-9_vs_5:                                               directory
+winequality-white-3_vs_7:                                                 directory
+winequality-white-9_vs_4:                                                 directory
+wisconsinImb:                                                             directory
+yeast-0-2-5-6_vs_3-7-8-9:                                                 directory
+yeast-0-2-5-7-9_vs_3-6-8:                                                 directory
+yeast-0-3-5-9_vs_7-8:                                                     directory
+yeast-0-5-6-7-9_vs_4:                                                     directory
+yeast1:                                                                   directory
+yeast-1-2-8-9_vs_7:                                                       directory
+yeast-1-4-5-8_vs_7:                                                       directory
+yeast-1_vs_7:                                                             directory
+yeast-2_vs_4:                                                             directory
+yeast-2_vs_8:                                                             directory
+yeast3:                                                                   directory
+yeast4:                                                                   directory
+yeast5:                                                                   directory
+yeast6:                                                                   directory
+zoo-3:                                                                    directory
