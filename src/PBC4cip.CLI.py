@@ -36,12 +36,11 @@ def Train(file, outputDirectory, treeCount, multivariate, suffix=None):
     WritePatternsBinary(patterns, file, outputDirectory, suffix)
 
 
-
-def Classify(file, outputDirectory, resultsId, suffix=None):
+def Classify(file, outputDirectory, resultsId, delete, suffix=None):
 
     try:
         classifier = PBC4cip(file)
-        patterns = ReadPatternsBinary(file, outputDirectory, suffix)
+        patterns = ReadPatternsBinary(file, outputDirectory, delete, suffix)
         evaluation = classifier.Classification(patterns)
         WriteClassificationResults(evaluation, file, outputDirectory, suffix)
         WriteResultsCSV(evaluation, file, outputDirectory, resultsId)
@@ -102,7 +101,7 @@ def Execute(args):
         tst.set_description(f"Classifying instances from {testing_files[f]}")
         tst.refresh()  # to show immediately the update
         Classify(testing_files[f], args.output_directory, resultsId,
-                 args.test_file_suffix)
+                 args.delete_binary, args.test_file_suffix)
         tst.set_description(f"Results saved for {testing_files[f]}")
         tst.refresh()  # to show immediately the update
 
@@ -119,28 +118,10 @@ if __name__ == '__main__':
 
     # Some samples to test the program (they are already in the data folder)
     # region Default files
-    # winequality-red-3_vs_5/winequality-red-3_vs_5-5-2tra.dat
-    # C:\Users\jrenewhite\source\repos\PBC4cip\dataMulti\B\abalone-17_vs_7-8-9-10\abalone-17_vs_7-8-9-10-5-1tra.dat
-    defaultTrainingFiles.append(os.path.join(os.path.normpath(
-        defaultDataDir), "winequality-white-3_vs_7tra.dat"))
-    defaultTestingFiles.append(os.path.join(os.path.normpath(
-        defaultDataDir), "winequality-white-3_vs_7tst.dat"))
-    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tra.dat"))
-    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "abalone-17_vs_7-8-9-10"), "abalone-17_vs_7-8-9-10-5-1tst.dat"))
-    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "winequality-red-3_vs_5"), "winequality-red-3_vs_5-5-2tra.dat"))
-    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "winequality-red-3_vs_5"), "winequality-red-3_vs_5-5-2tst.dat"))
-    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "car-good"), "car-good-5-1tra.dat"))
-    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "car-good"), "car-good-5-1tst.dat"))
-    # defaultTrainingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "iris0"), "iris0-5-1tra.dat"))
-    # defaultTestingFiles.append(os.path.join(os.path.join(os.path.normpath(
-    #     defaultDataDir), "iris0"), "iris0-5-1tst.dat"))
+    # defaultTrainingFiles.append(os.path.join(os.path.normpath(
+    #     defaultDataDir), "winequality-white-3_vs_7tra.dat"))
+    # defaultTestingFiles.append(os.path.join(os.path.normpath(
+    #     defaultDataDir), "winequality-white-3_vs_7tst.dat"))
     # endregion
 
     parser = argparse.ArgumentParser(
@@ -184,6 +165,12 @@ if __name__ == '__main__':
                         metavar="<True/False>",
                         default=False,
                         help="states if multivariate variant is to be used")
+
+    parser.add_argument("--delete-binary",
+                        type=bool,
+                        metavar="<True/False>",
+                        default=True,
+                        help="states if binary file is to be deleted after execution")
 
     parser.add_argument("--tree-count",
                         type=int,

@@ -40,7 +40,7 @@ def ReadDAT(file):
     return ReadAndDeleteARFF(new_f)
 
 
-def ReadPatternsBinary(originalFile, outputDirectory, suffix=None):
+def ReadPatternsBinary(originalFile, outputDirectory, delete, suffix=None):
     patterns = list()
 
     if not suffix:
@@ -69,6 +69,8 @@ def ReadPatternsBinary(originalFile, outputDirectory, suffix=None):
         #         patterns.append(pattern_in)
         #     except EOFError:
         #         break
+        if delete:
+            os.remove(name)
     else:
         raise Exception(
             f"File '{name}' not found! Please extract patterns first!")
